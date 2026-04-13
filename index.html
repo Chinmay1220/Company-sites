@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinmay — Why Lindy AI Should Hire Me</title>
+  <meta name="description" content="A data engineer who built your credit intelligence dashboard before you asked. Here's why Lindy AI should hire Chinmay.">
+  <meta property="og:title" content="Why Lindy AI Should Hire Chinmay">
+  <meta property="og:description" content="I found your biggest data blind spot — before you posted the job.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <style>
+    /* ========== Custom Properties ========== */
+    :root {
+      --font-display: 'DM Serif Display', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+
+      --color-bg: #FAFAF8;
+      --color-surface: #FFFFFF;
+      --color-border: #E8E6E1;
+      --color-text-primary: #1A1A1A;
+      --color-text-secondary: #6B6B6B;
+      --color-text-muted: #9B9B9B;
+      --color-accent: #2A2A2A;
+      --color-number: #F0EDE8;
+      --color-pill-bg: #F0EDE8;
+      --color-pill-text: #3A3A3A;
+      --color-pill-border: #DDD9D1;
+      --color-header-bg: rgba(250, 250, 248, 0.85);
+      --color-result: #4A6741;
+
+      --max-width: 720px;
+      --radius: 8px;
+    }
+
+    [data-theme="dark"] {
+      --color-bg: #141413;
+      --color-surface: #1C1C1A;
+      --color-border: #2E2E2A;
+      --color-text-primary: #EDEDEB;
+      --color-text-secondary: #A0A09B;
+      --color-text-muted: #6B6B66;
+      --color-accent: #E0DED8;
+      --color-number: #222220;
+      --color-pill-bg: #222220;
+      --color-pill-text: #C8C8C2;
+      --color-pill-border: #3A3A35;
+      --color-header-bg: rgba(20, 20, 19, 0.85);
+      --color-result: #8FBF88;
+    }
+
+    /* ========== Reset & Base ========== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--color-text-primary);
+      background-color: var(--color-bg);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    a {
+      color: var(--color-text-primary);
+      text-decoration-color: var(--color-border);
+      text-underline-offset: 3px;
+      transition: text-decoration-color 0.2s ease;
+    }
+    a:hover { text-decoration-color: var(--color-text-primary); }
+
+    /* ========== Header ========== */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--color-header-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border);
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .wordmark {
+      font-family: var(--font-display);
+      font-size: 20px;
+      color: var(--color-text-primary);
+      text-decoration: none;
+    }
+
+    .theme-toggle {
+      background: none;
+      border: 1px solid var(--color-border);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-text-secondary);
+      transition: border-color 0.2s ease, color 0.2s ease;
+    }
+    .theme-toggle:hover { border-color: var(--color-text-primary); color: var(--color-text-primary); }
+    .theme-toggle:focus-visible { outline: 2px solid var(--color-text-primary); outline-offset: 2px; }
+    .theme-toggle svg { width: 18px; height: 18px; }
+
+    /* ========== Layout ========== */
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    section { padding: 64px 0; }
+
+    .section-label {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--color-text-muted);
+      margin-bottom: 32px;
+    }
+
+    /* ========== Hero ========== */
+    #hero {
+      text-align: center;
+      padding: 80px 0 64px;
+    }
+
+    .avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: var(--color-number);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 26px;
+      color: var(--color-text-secondary);
+      margin-bottom: 32px;
+      transition: background-color 0.3s ease;
+    }
+
+    #hero h1 {
+      font-family: var(--font-display);
+      font-size: 42px;
+      font-weight: 400;
+      line-height: 1.15;
+      margin-bottom: 8px;
+    }
+
+    .role {
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--color-text-secondary);
+      margin-bottom: 24px;
+    }
+
+    .tagline {
+      font-size: 20px;
+      line-height: 1.5;
+      color: var(--color-text-primary);
+      max-width: 540px;
+      margin: 0 auto 16px;
+    }
+
+    .context {
+      font-size: 15px;
+      color: var(--color-text-muted);
+      margin-bottom: 32px;
+    }
+
+    .cta {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-text-muted);
+      text-decoration: none;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: color 0.2s ease;
+    }
+    .cta:hover { color: var(--color-text-primary); }
+    .cta-arrow { display: block; margin-top: 4px; font-size: 18px; }
+
+    /* ========== Reason Cards ========== */
+    #reasons { padding-bottom: 32px; }
+
+    .reason-card {
+      padding: 48px 0;
+      border-top: 1px solid var(--color-border);
+    }
+
+    .reason-number {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 96px;
+      line-height: 1;
+      color: var(--color-number);
+      margin-bottom: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .reason-card h2 {
+      font-family: var(--font-display);
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 1.3;
+      margin-bottom: 20px;
+    }
+
+    .reason-card p {
+      color: var(--color-text-secondary);
+      margin-bottom: 16px;
+    }
+    .reason-card p:last-child { margin-bottom: 0; }
+
+    .result {
+      font-weight: 500;
+      color: var(--color-result) !important;
+    }
+
+    /* ========== Stats ========== */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 32px;
+      transition: border-color 0.3s ease;
+    }
+
+    .stat { text-align: center; }
+
+    .stat-number {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 40px;
+      line-height: 1.2;
+      color: var(--color-text-primary);
+      margin-bottom: 4px;
+    }
+
+    .stat-label {
+      font-size: 13px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--color-text-muted);
+    }
+
+    /* ========== Stack Pills ========== */
+    #stack { text-align: center; }
+
+    .pill-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      border-radius: 100px;
+      background: var(--color-pill-bg);
+      color: var(--color-pill-text);
+      border: 1px solid var(--color-pill-border);
+      transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    }
+
+    /* ========== Footer ========== */
+    footer {
+      text-align: center;
+      padding: 64px 24px;
+      border-top: 1px solid var(--color-border);
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .footer-tagline {
+      font-family: var(--font-display);
+      font-size: 22px;
+      margin-bottom: 24px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+
+    .footer-links a {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-text-secondary);
+    }
+    .footer-links a:hover { color: var(--color-text-primary); }
+
+    .footer-copy {
+      font-size: 13px;
+      color: var(--color-text-muted);
+    }
+
+    /* ========== Responsive ========== */
+    @media (min-width: 600px) {
+      .stats-grid { grid-template-columns: repeat(3, 1fr); }
+      .reason-number { font-size: 120px; }
+    }
+
+    @media (min-width: 960px) {
+      section { padding: 80px 0; }
+      #hero { padding: 96px 0 80px; }
+      #hero h1 { font-size: 52px; }
+      .tagline { font-size: 22px; }
+      .reason-card h2 { font-size: 30px; }
+      .stat-number { font-size: 48px; }
+    }
+
+    /* ========== Focus Visible ========== */
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid var(--color-text-primary);
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="wordmark">Chinmay</a>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+      <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="display:none">
+        <circle cx="12" cy="12" r="5"/>
+        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+      </svg>
+      <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+      </svg>
+    </button>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero">
+      <div class="avatar" aria-hidden="true">C</div>
+      <h1>Chinmay</h1>
+      <p class="role">Data Engineer → Lindy AI</p>
+      <p class="tagline">I built your credit intelligence dashboard<br>before you posted the job.</p>
+      <p class="context">Boston · MS Information Systems, Northeastern University</p>
+      <a href="#reasons" class="cta">See why<span class="cta-arrow" aria-hidden="true">↓</span></a>
+    </section>
+
+    <!-- Three Reasons -->
+    <section id="reasons">
+      <article class="reason-card">
+        <span class="reason-number" aria-hidden="true">1</span>
+        <h2>I found your biggest data blind spot — before you asked</h2>
+        <p>I dug through hundreds of Trustpilot reviews and found a pattern: Lindy users kept saying credits felt like a "black box." So I built a solution — a full <strong>Credit Intelligence Dashboard</strong> — before anyone at Lindy asked for one.</p>
+        <p>The stack: Python mock data generator (200 users, 8,600+ workflow events), dbt models across 3 layers (staging, intermediate, marts), Snowflake as the warehouse, and a live Streamlit dashboard with 5 tabs covering credit consumption, workflow reliability, cancellation risk, user sentiment, and revenue at risk.</p>
+        <p class="result">Result: recruiter call within a week, then a CEO interview with Flo Crivello.</p>
+      </article>
+
+      <article class="reason-card">
+        <span class="reason-number" aria-hidden="true">2</span>
+        <h2>I own the full data stack end to end</h2>
+        <p>At <strong>S2N Health</strong>, I owned the entire data infrastructure — ingestion through analytics — processing large-scale healthcare records with zero handoffs. At <strong>Capgemini</strong>, I built enterprise data pipelines across dozens of source systems using Snowflake and dbt for Fortune 500 clients.</p>
+        <p>I don't build a pipeline and toss it over the wall. I build the pipeline, the transformation layer, the data models, the dashboard, and the monitoring. One person, full stack, full ownership.</p>
+      </article>
+
+      <article class="reason-card">
+        <span class="reason-number" aria-hidden="true">3</span>
+        <h2>I think like a product person, not just a data engineer</h2>
+        <p>Lindy's credit problem isn't a data problem — it's a <strong>product trust problem</strong>. Users who burn credits on failed automations don't file support tickets. They just churn.</p>
+        <p>The dashboard I built doesn't just track metrics — it surfaces the invisible risk that sits between "user is confused" and "user has cancelled." That's the gap where $2,400 in monthly recurring revenue quietly disappears.</p>
+      </article>
+    </section>
+
+    <!-- Stats -->
+    <section id="stats">
+      <p class="section-label">Dashboard Impact</p>
+      <div class="stats-grid">
+        <div class="stat">
+          <span class="stat-number">24.2%</span>
+          <span class="stat-label">Credit waste identified</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">102</span>
+          <span class="stat-label">High-risk users flagged</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">$2,400</span>
+          <span class="stat-label">MRR at risk surfaced</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stack -->
+    <section id="stack">
+      <p class="section-label">Tools I Work With</p>
+      <div class="pill-container">
+        <span class="pill">Python</span>
+        <span class="pill">SQL</span>
+        <span class="pill">dbt</span>
+        <span class="pill">Snowflake</span>
+        <span class="pill">Streamlit</span>
+        <span class="pill">Airflow</span>
+        <span class="pill">Databricks</span>
+        <span class="pill">AWS</span>
+        <span class="pill">Spark</span>
+        <span class="pill">Git</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-tagline">Let's build Lindy's data layer together.</p>
+    <nav class="footer-links" aria-label="External links">
+      <a href="#">Live Dashboard</a>
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+    </nav>
+    <p class="footer-copy">&copy; 2025 Chinmay</p>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.getElementById('theme-toggle');
+      var sunIcon = document.getElementById('icon-sun');
+      var moonIcon = document.getElementById('icon-moon');
+
+      function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        sunIcon.style.display = theme === 'dark' ? 'block' : 'none';
+        moonIcon.style.display = theme === 'dark' ? 'none' : 'block';
+      }
+
+      var current = document.documentElement.getAttribute('data-theme') || 'light';
+      applyTheme(current);
+
+      toggle.addEventListener('click', function () {
+        var now = document.documentElement.getAttribute('data-theme');
+        applyTheme(now === 'dark' ? 'light' : 'dark');
+      });
+    })();
+  </script>
+</body>
+</html>
