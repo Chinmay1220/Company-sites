@@ -11,8 +11,6 @@ Targeted "Why You Should Hire Me" one-pager websites for specific company applic
 
 ## Live Site
 
-> Replace with your GitHub Pages URL after deployment.
-
 - Lindy: `https://chinmay1220.github.io/Company-sites/`
 - Wake County: `https://chinmay1220.github.io/Company-sites/wake-county/`
 
