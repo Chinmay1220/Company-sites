@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinmay Sawant - Why Stuut Should Hire Me</title>
+  <meta name="description" content="Data Engineer with 3+ years building production pipelines, data warehouses, and analytics infrastructure. Here's why I'm the right first data hire for Stuut.">
+  <meta property="og:title" content="Why Stuut Should Hire Chinmay Sawant">
+  <meta property="og:description" content="3+ years building production data pipelines. Ready to be Stuut's first data hire and own the entire stack.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-display: 'DM Serif Display', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+      --color-bg: #FAFAF8;
+      --color-surface: #FFFFFF;
+      --color-border: #E8E6E1;
+      --color-text-primary: #1A1A1A;
+      --color-text-secondary: #6B6B6B;
+      --color-text-muted: #9B9B9B;
+      --color-accent: #2A2A2A;
+      --color-number: #F0EDE8;
+      --color-pill-bg: #F0EDE8;
+      --color-pill-text: #3A3A3A;
+      --color-pill-border: #DDD9D1;
+      --color-header-bg: rgba(250, 250, 248, 0.85);
+      --color-result: #4A6741;
+      --color-match-bg: #F0EDE8;
+      --color-match-check: #4A6741;
+      --max-width: 800px;
+      --radius: 8px;
+    }
+    [data-theme="dark"] {
+      --color-bg: #141413;
+      --color-surface: #1C1C1A;
+      --color-border: #2E2E2A;
+      --color-text-primary: #EDEDEB;
+      --color-text-secondary: #A0A09B;
+      --color-text-muted: #6B6B66;
+      --color-accent: #E0DED8;
+      --color-number: #222220;
+      --color-pill-bg: #222220;
+      --color-pill-text: #C8C8C2;
+      --color-pill-border: #3A3A35;
+      --color-header-bg: rgba(20, 20, 19, 0.85);
+      --color-result: #8FBF88;
+      --color-match-bg: #1E1E1C;
+      --color-match-check: #8FBF88;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: var(--font-body); font-size: 17px; line-height: 1.7;
+      color: var(--color-text-primary); background-color: var(--color-bg);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    a { color: var(--color-text-primary); text-decoration-color: var(--color-border); text-underline-offset: 3px; transition: text-decoration-color 0.2s ease; }
+    a:hover { text-decoration-color: var(--color-text-primary); }
+
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--color-header-bg); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border); padding: 16px 24px;
+      display: flex; justify-content: space-between; align-items: center;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+    .wordmark { font-family: var(--font-display); font-size: 20px; color: var(--color-text-primary); text-decoration: none; }
+    .theme-toggle {
+      background: none; border: 1px solid var(--color-border); border-radius: 50%;
+      width: 40px; height: 40px; cursor: pointer; display: flex; align-items: center; justify-content: center;
+      color: var(--color-text-secondary); transition: border-color 0.2s ease, color 0.2s ease;
+    }
+    .theme-toggle:hover { border-color: var(--color-text-primary); color: var(--color-text-primary); }
+    .theme-toggle:focus-visible { outline: 2px solid var(--color-text-primary); outline-offset: 2px; }
+    .theme-toggle svg { width: 18px; height: 18px; }
+
+    main { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+    section { padding: 64px 0; }
+    .section-label {
+      font-family: var(--font-body); font-size: 16px; font-weight: 500;
+      text-transform: uppercase; letter-spacing: 3px; color: var(--color-text-muted); margin-bottom: 32px;
+    }
+
+    /* Hero */
+    #hero { text-align: center; padding: 80px 0 64px; }
+    .avatar {
+      width: 280px; height: 280px; border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--color-border);
+      margin-bottom: 32px; transition: border-color 0.3s ease;
+    }
+    #hero h1 { font-family: var(--font-display); font-size: 42px; font-weight: 400; line-height: 1.15; margin-bottom: 8px; }
+    .role { font-size: 18px; font-weight: 500; color: var(--color-text-secondary); margin-bottom: 24px; }
+    .tagline { font-size: 20px; line-height: 1.5; color: var(--color-text-primary); max-width: 560px; margin: 0 auto 16px; }
+    .context { font-size: 15px; color: var(--color-text-muted); margin-bottom: 32px; }
+    .cta { display: inline-block; font-size: 14px; font-weight: 500; color: var(--color-text-muted); text-decoration: none; letter-spacing: 1px; text-transform: uppercase; transition: color 0.2s ease; }
+    .cta:hover { color: var(--color-text-primary); }
+    .cta-arrow { display: block; margin-top: 4px; font-size: 18px; }
+
+    /* Page Nav */
+    .page-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 32px; }
+    .nav-pill {
+      font-size: 13px; font-weight: 500; text-decoration: none; letter-spacing: 0.5px;
+      color: var(--color-text-muted); border: 1px solid var(--color-border);
+      padding: 8px 16px; border-radius: 100px; transition: all 0.2s ease;
+    }
+    .nav-pill:hover { color: var(--color-text-primary); border-color: var(--color-text-secondary); }
+
+    /* Why Company */
+    #why-stuut { padding: 0 0 24px; }
+    .why-text { font-size: 17px; line-height: 1.7; color: var(--color-text-secondary); }
+
+    /* Match Table */
+    .match-table {
+      width: 100%; border-collapse: separate; border-spacing: 0;
+      border: 1px solid var(--color-border); border-radius: var(--radius);
+      overflow: hidden; transition: border-color 0.3s ease;
+    }
+    .match-table thead th {
+      font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px;
+      color: var(--color-text-muted); padding: 14px 20px; text-align: left;
+      background: var(--color-match-bg); border-bottom: 1px solid var(--color-border);
+    }
+    .match-table thead th:first-child { width: 45%; }
+    .match-table thead th:nth-child(2) { width: 10%; text-align: center; }
+    .match-table thead th:last-child { width: 45%; }
+    .match-table tbody td {
+      padding: 14px 20px; font-size: 14px; vertical-align: top;
+      border-bottom: 1px solid var(--color-border); transition: background-color 0.3s ease;
+    }
+    .match-table tbody tr:last-child td { border-bottom: none; }
+    .match-table tbody tr:hover td { background: var(--color-match-bg); }
+    .match-table .col-need { color: var(--color-text-secondary); }
+    .match-table .col-check { text-align: center; color: var(--color-match-check); font-size: 18px; font-weight: 700; }
+    .match-table .col-have { color: var(--color-text-primary); font-weight: 500; }
+    @media (max-width: 600px) {
+      .match-table thead { display: none; }
+      .match-table, .match-table tbody, .match-table tr, .match-table td { display: block; }
+      .match-table tbody tr {
+        padding: 16px; margin-bottom: 8px;
+        background: var(--color-match-bg); border-radius: var(--radius);
+        border-bottom: none !important;
+      }
+      .match-table tbody td { border-bottom: none; padding: 2px 0; }
+      .match-table .col-check { text-align: left; }
+      .match-table .col-need { font-size: 13px; }
+      .match-table .col-need::before { content: 'Need: '; font-weight: 700; color: var(--color-text-muted); }
+      .match-table .col-have::before { content: 'I bring: '; font-weight: 700; color: var(--color-match-check); }
+    }
+
+    /* Reason Cards */
+    #reasons { padding-bottom: 32px; }
+    .reason-card { padding: 48px 0; border-top: 1px solid var(--color-border); }
+    .reason-number { display: block; font-family: var(--font-display); font-size: 96px; line-height: 1; color: var(--color-number); margin-bottom: 16px; transition: color 0.3s ease; }
+    .reason-card h2 { font-family: var(--font-display); font-size: 26px; font-weight: 400; line-height: 1.3; margin-bottom: 20px; }
+    .reason-card p { color: var(--color-text-secondary); margin-bottom: 16px; }
+    .reason-card p:last-child { margin-bottom: 0; }
+    .result { font-weight: 500; color: var(--color-result) !important; }
+
+    /* Value Section */
+    .value-grid {
+      display: grid; grid-template-columns: 1fr; gap: 20px;
+    }
+    .value-card {
+      border: 1px solid var(--color-border); border-radius: var(--radius);
+      padding: 28px; transition: border-color 0.3s ease;
+    }
+    .value-card:hover { border-color: var(--color-text-muted); }
+    .value-card-header {
+      display: flex; align-items: center; gap: 12px; margin-bottom: 12px;
+    }
+    .value-card-icon {
+      width: 40px; height: 40px; border-radius: 10px;
+      background: var(--color-match-bg); display: flex; align-items: center; justify-content: center;
+      font-size: 18px; flex-shrink: 0; transition: background-color 0.3s ease;
+    }
+    .value-card h3 {
+      font-family: var(--font-display); font-size: 20px; font-weight: 400;
+      color: var(--color-text-primary);
+    }
+    .value-card p { font-size: 15px; color: var(--color-text-secondary); margin-bottom: 16px; }
+    .value-card p:last-child { margin-bottom: 0; }
+    .value-list { list-style: none; padding: 0; margin: 0; }
+    .value-list li {
+      font-size: 15px; color: var(--color-text-secondary); padding: 8px 0;
+      border-bottom: 1px solid var(--color-border); display: flex; gap: 10px; align-items: baseline;
+    }
+    .value-list li:last-child { border-bottom: none; }
+
+    /* Experience cards */
+    .exp-card {
+      border: 1px solid var(--color-border); border-radius: var(--radius);
+      padding: 24px; margin-bottom: 16px; transition: border-color 0.3s ease;
+    }
+    .exp-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; flex-wrap: wrap; gap: 4px; }
+    .exp-company { font-weight: 700; font-size: 16px; }
+    .exp-date { font-size: 14px; color: var(--color-text-muted); }
+    .exp-role { font-size: 15px; color: var(--color-text-secondary); margin-bottom: 12px; }
+    .exp-bullets { list-style: none; padding: 0; }
+    .exp-bullets li { position: relative; padding-left: 20px; font-size: 15px; color: var(--color-text-secondary); margin-bottom: 8px; }
+    .exp-bullets li::before { content: ''; position: absolute; left: 0; top: 10px; width: 6px; height: 6px; border-radius: 50%; background: var(--color-border); }
+    .exp-bullets .highlight { color: var(--color-text-primary); font-weight: 500; }
+
+    /* Stats */
+    .stats-grid {
+      display: grid; grid-template-columns: 1fr; gap: 32px;
+      border: 1px solid var(--color-border); border-radius: var(--radius); padding: 32px;
+      transition: border-color 0.3s ease;
+    }
+    .stat { text-align: center; }
+    .stat-number { display: block; font-family: var(--font-display); font-size: 40px; line-height: 1.2; color: var(--color-text-primary); margin-bottom: 4px; }
+    .stat-label { font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-text-muted); }
+
+    /* Stack Pills */
+    #stack { text-align: center; }
+    .pill-container { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+    .pill {
+      display: inline-flex; align-items: center; padding: 6px 16px; font-size: 13px; font-weight: 500;
+      border-radius: 100px; background: var(--color-pill-bg); color: var(--color-pill-text);
+      border: 1px solid var(--color-pill-border); transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    }
+    .pill-section { margin-bottom: 16px; }
+    .pill-section-label { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-text-muted); margin-bottom: 10px; }
+
+    /* Footer */
+    footer {
+      text-align: center; padding: 64px 24px; border-top: 1px solid var(--color-border);
+      max-width: var(--max-width); margin: 0 auto;
+    }
+    .footer-tagline { font-family: var(--font-display); font-size: 22px; margin-bottom: 24px; }
+    .footer-links { display: flex; gap: 24px; justify-content: center; margin-bottom: 32px; }
+    .footer-links a { font-size: 14px; font-weight: 500; color: var(--color-text-secondary); }
+    .footer-links a:hover { color: var(--color-text-primary); }
+    .footer-copy { font-size: 13px; color: var(--color-text-muted); }
+
+    @media (min-width: 600px) {
+      .stats-grid { grid-template-columns: repeat(4, 1fr); }
+      .reason-number { font-size: 120px; }
+    }
+    @media (min-width: 960px) {
+      section { padding: 80px 0; }
+      #hero { padding: 96px 0 80px; }
+      #hero h1 { font-size: 52px; }
+      .tagline { font-size: 22px; }
+      .reason-card h2 { font-size: 30px; }
+      .stat-number { font-size: 48px; }
+    }
+    a:focus-visible, button:focus-visible { outline: 2px solid var(--color-text-primary); outline-offset: 2px; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="wordmark">Chinmay Sawant</a>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+      <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="display:none">
+        <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+      </svg>
+      <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+      </svg>
+    </button>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero">
+      <img class="avatar" src="photo.png" alt="Chinmay Sawant">
+      <h1>Chinmay Sawant</h1>
+      <p class="role">Data Engineer &rarr; Stuut</p>
+      <p class="tagline">3+ years building production data pipelines and analytics infrastructure. Ready to be your first data hire and own the entire stack from day one.</p>
+      <p class="context">Boston, MA &middot; MS Information Systems, Northeastern University &middot; Open to relocation</p>
+      <a href="#why-stuut" class="cta">See the fit<span class="cta-arrow" aria-hidden="true">&darr;</span></a>
+      <nav class="page-nav">
+        <a href="#why-stuut" class="nav-pill">Why Stuut</a>
+        <a href="#match" class="nav-pill">Skill Match</a>
+        <a href="#reasons" class="nav-pill">Why Me</a>
+        <a href="#value" class="nav-pill">What I'll Deliver</a>
+        <a href="#experience" class="nav-pill">Experience</a>
+        <a href="#stats" class="nav-pill">By the Numbers</a>
+        <a href="#stack" class="nav-pill">Tech Stack</a>
+      </nav>
+    </section>
+
+    <!-- Why Stuut -->
+    <section id="why-stuut">
+      <p class="section-label">Why Stuut Excites Me</p>
+      <p class="why-text">Accounts receivable is one of the most under-digitized, high-friction problems in B2B finance - and Stuut is attacking it head-on with a platform that actually makes collections smarter, not just automated. The fact that Fortune 10 industrials and scaling midmarkets already trust the product tells me this isn't a solution looking for a problem. Being the first data hire at a company backed by a16z and Khosla means I'd get to shape the entire data foundation - architecture, pipelines, analytics, dashboards - from scratch. That's the kind of ownership that gets me out of bed in the morning.</p>
+    </section>
+
+    <!-- JD Match -->
+    <section id="match">
+      <p class="section-label">What You Need &rarr; What I Bring</p>
+      <table class="match-table">
+        <thead>
+          <tr>
+            <th>Stuut Requires</th>
+            <th>Match</th>
+            <th>My Experience</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col-need">3+ years production data pipelines (Python)</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">3+ years: Python ETL/ELT pipelines at S2N Health (BigQuery) and Capgemini (Snowflake).</td>
+          </tr>
+          <tr>
+            <td class="col-need">SQL + modern data warehouses (Snowflake, BigQuery, Redshift)</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Snowflake at Capgemini, BigQuery at S2N Health, Redshift in projects. Slashed query latency by 50%.</td>
+          </tr>
+          <tr>
+            <td class="col-need">ETL/ELT at scale (Airflow, dbt)</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">dbt models on BigQuery across 17B+ monthly records. Airflow-orchestrated pipelines with CI/CD.</td>
+          </tr>
+          <tr>
+            <td class="col-need">Data modeling (performance + flexibility)</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Dimensional modeling across Snowflake &amp; Redshift. Self-serve analytics layer for 5+ business teams.</td>
+          </tr>
+          <tr>
+            <td class="col-need">Messy real-world data (SaaS APIs, DBs, integrations)</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Ingested 15+ source systems including REST APIs and semi-structured JSON into Snowflake.</td>
+          </tr>
+          <tr>
+            <td class="col-need">Build from scratch / thrive in ambiguity</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Owned full data stack end-to-end at S2N Health. Zero handoffs, full ownership.</td>
+          </tr>
+          <tr>
+            <td class="col-need">Data quality obsession</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Instituted governance, lineage tracking, and compliance. Cut data quality issues by 30%.</td>
+          </tr>
+          <tr>
+            <td class="col-need">Fintech / B2B SaaS / financial data</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Built Financial Forecasting System (dbt + Snowflake + Looker). A/B testing infra for B2B SaaS at Capgemini.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Three Reasons -->
+    <section id="reasons">
+      <article class="reason-card">
+        <span class="reason-number" aria-hidden="true">1</span>
+        <h2>I've built the exact data stack you need - from scratch</h2>
+        <p>Your JD says this is a foundational role - "you'll be our first data hire, which means you'll shape everything from data architecture to how we think about analytics." That's exactly the environment I come from.</p>
+        <p>At <strong>S2N Health</strong>, I owned the full data infrastructure end-to-end: architected dbt SQL models on BigQuery processing 17B+ monthly records, built Python ETL/ELT pipelines across structured and semi-structured sources, optimized warehouse performance (25% cost reduction, 33% faster execution), and delivered Tableau dashboards consolidating 10+ reports into a single self-serve layer for 5+ business teams.</p>
+        <p>At <strong>Capgemini</strong>, I built ETL/ELT pipelines ingesting 15+ source systems - REST APIs, JSON, databases - into Snowflake on Azure. I shipped CI/CD via GitHub Actions with Terraform and Docker, and slashed analytical query latency by 50% through SQL rewrites and partitioning.</p>
+        <p class="result">This isn't about maintaining someone else's stack. It's about building from zero - which is exactly what Stuut needs.</p>
+      </article>
+
+      <article class="reason-card">
+        <span class="reason-number" aria-hidden="true">2</span>
+        <h2>I turn financial data into revenue decisions</h2>
+        <p>Stuut needs someone who can "translate messy data into clean, reliable datasets that drive product decisions, customer insights, and business growth." Here's what that looks like on my resume:</p>
+        <p>I built a <strong>Financial Data Analysis &amp; Forecasting System</strong> using dbt, Airflow, Snowflake, and Looker - improving forecasting accuracy by 25% with automated testing and CI/CD integration. At Capgemini, I translated product and GTM requirements into analytics-ready datasets that <strong>surfaced $150K+ in revenue opportunities</strong>. I also deployed feature flag and rollout tracking infrastructure enabling A/B tests across 3+ product lines, cutting time-to-insight on retention and acquisition metrics by 40%.</p>
+        <p>For Stuut, this means I can build the analytics foundation that helps customers understand payment patterns, collection trends, and cash flow predictions - not just move data around.</p>
+      </article>
+
+      <article class="reason-card">
+        <span class="reason-number" aria-hidden="true">3</span>
+        <h2>I ship DataOps, not just pipelines</h2>
+        <p>Your JD emphasizes DataOps best practices - "data that is timely, accurate, and trusted across the organization." That's not just a pipeline problem, it's a culture and infrastructure problem. I've solved both.</p>
+        <p>At Capgemini, I instituted data governance, lineage tracking, and security compliance across all ETL/ELT pipelines - cutting data quality issues by 30% with full cataloging documentation. At S2N Health, I built automated testing (row count, null checks, referential integrity) that eliminated 95% of manual validation overhead.</p>
+        <p>I shipped CI/CD workflows via GitHub Actions with Terraform IaC and Docker, accelerating deployments to a bi-weekly cadence. When Stuut scales from dozens to hundreds of customers, the data platform needs to scale with it - and I build with that in mind from day one.</p>
+        <p class="result">Great analytics start with great infrastructure. I build both.</p>
+      </article>
+    </section>
+
+    <!-- Value I'll Deliver -->
+    <section id="value">
+      <p class="section-label">What I'll Deliver at Stuut</p>
+      <div class="value-grid">
+
+        <div class="value-card">
+          <div class="value-card-header">
+            <span class="value-card-icon">&#9881;</span>
+            <h3>Data Infrastructure</h3>
+          </div>
+          <ul class="value-list">
+            <li>Pipelines ingesting customer ERPs, payment processors, and internal systems</li>
+            <li>dbt transformation layer with automated quality testing</li>
+            <li>Warehouse architecture designed to scale from dozens to hundreds of customers</li>
+          </ul>
+        </div>
+
+        <div class="value-card">
+          <div class="value-card-header">
+            <span class="value-card-icon">&#128202;</span>
+            <h3>Analytics Foundation</h3>
+          </div>
+          <ul class="value-list">
+            <li>Dashboards for payment patterns, collection trends, and cash flow predictions</li>
+            <li>Self-serve analytics for leadership to define KPIs and track metrics</li>
+            <li>Customer insights that help them get paid faster</li>
+          </ul>
+        </div>
+
+        <div class="value-card">
+          <div class="value-card-header">
+            <span class="value-card-icon">&#127919;</span>
+            <h3>DataOps &amp; Scale</h3>
+          </div>
+          <ul class="value-list">
+            <li>CI/CD, data quality monitoring, and observability baked in from day one</li>
+            <li>Governance and lineage tracking so data is trusted across the org</li>
+            <li>Platform that anticipates bottlenecks before they hit</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <p class="section-label">Where I've Done This</p>
+
+      <div class="exp-card">
+        <div class="exp-header">
+          <span class="exp-company">S2N Health</span>
+          <span class="exp-date">Feb 2025 &ndash; Aug 2025 &middot; Boston</span>
+        </div>
+        <div class="exp-role">Data Engineer Co-op</div>
+        <ul class="exp-bullets">
+          <li>Architected dbt SQL models on BigQuery with row count, null, and referential integrity tests across <span class="highlight">17B+ monthly healthcare records</span></li>
+          <li>Engineered Python ETL/ELT pipelines across structured and semi-structured JSON sources, <span class="highlight">reducing upstream data errors by 20%</span></li>
+          <li>Optimized BigQuery via partition pruning and slot allocation - <span class="highlight">25% compute cost reduction, 33% faster execution</span></li>
+          <li>Delivered Tableau dashboards tracking real-time KPIs across <span class="highlight">5+ business teams</span></li>
+        </ul>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-header">
+          <span class="exp-company">Capgemini</span>
+          <span class="exp-date">Jan 2021 &ndash; Jul 2023 &middot; Mumbai</span>
+        </div>
+        <div class="exp-role">Senior Data Engineer</div>
+        <ul class="exp-bullets">
+          <li>Integrated real-time data workflows with backend services, surfacing <span class="highlight">$150K+ in revenue opportunities</span></li>
+          <li>Built ETL/ELT pipelines ingesting <span class="highlight">15+ source systems</span> including REST APIs and JSON into Snowflake on Azure</li>
+          <li>Shipped CI/CD via GitHub Actions with Terraform IaC and Docker - <span class="highlight">bi-weekly deployment cadence</span></li>
+          <li>Slashed analytical query latency by <span class="highlight">50%</span> through SQL rewrites and data partitioning across Snowflake</li>
+          <li>Instituted data governance, lineage tracking, and security compliance - <span class="highlight">30% fewer data quality issues</span></li>
+          <li>Deployed feature flag and A/B testing infra across <span class="highlight">3+ B2B SaaS product lines</span>, cutting time-to-insight by 40%</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section id="stats">
+      <p class="section-label">By the Numbers</p>
+      <div class="stats-grid">
+        <div class="stat">
+          <span class="stat-number">17B+</span>
+          <span class="stat-label">Records processed monthly</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">15+</span>
+          <span class="stat-label">Source systems integrated</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">50%</span>
+          <span class="stat-label">Query latency reduced</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">95%</span>
+          <span class="stat-label">Manual validation eliminated</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stack -->
+    <section id="stack">
+      <p class="section-label">Tech Stack</p>
+
+      <div class="pill-section">
+        <div class="pill-section-label">Languages &amp; Engineering</div>
+        <div class="pill-container">
+          <span class="pill">Python</span>
+          <span class="pill">PySpark</span>
+          <span class="pill">SQL</span>
+          <span class="pill">Scala</span>
+          <span class="pill">Pandas</span>
+          <span class="pill">ETL/ELT</span>
+          <span class="pill">Data Modeling</span>
+          <span class="pill">REST APIs</span>
+        </div>
+      </div>
+
+      <div class="pill-section">
+        <div class="pill-section-label">Cloud &amp; Platforms</div>
+        <div class="pill-container">
+          <span class="pill">Snowflake</span>
+          <span class="pill">BigQuery</span>
+          <span class="pill">Redshift</span>
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">Looker</span>
+          <span class="pill">Tableau</span>
+          <span class="pill">Delta Lake</span>
+        </div>
+      </div>
+
+      <div class="pill-section">
+        <div class="pill-section-label">DevOps &amp; Data Governance</div>
+        <div class="pill-container">
+          <span class="pill">dbt</span>
+          <span class="pill">Airflow</span>
+          <span class="pill">Kafka</span>
+          <span class="pill">Docker</span>
+          <span class="pill">Terraform</span>
+          <span class="pill">CI/CD</span>
+          <span class="pill">GitHub Actions</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nice to Haves -->
+    <section id="bonus">
+      <p class="section-label">Your Nice-to-Haves I Also Cover</p>
+      <table class="match-table">
+        <thead>
+          <tr>
+            <th>Stuut Nice-to-Have</th>
+            <th>Match</th>
+            <th>My Experience</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col-need">Fintech / financial data experience</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Built Financial Forecasting System with dbt + Snowflake + Airflow + Looker. Improved accuracy by 25%.</td>
+          </tr>
+          <tr>
+            <td class="col-need">B2B SaaS background</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Deployed A/B testing infra across 3+ B2B SaaS product lines at Capgemini. Cut time-to-insight by 40%.</td>
+          </tr>
+          <tr>
+            <td class="col-need">AR/AP workflow understanding</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Translated GTM and product requirements into analytics-ready financial datasets surfacing $150K+ in opportunities.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-tagline">Ready to be Stuut's first data hire and build the foundation from day one.</p>
+    <nav class="footer-links" aria-label="External links">
+      <a href="https://github.com/Chinmay1220" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/chinmay-sawant-9b79a5192/" target="_blank">LinkedIn</a>
+      <a href="https://csprofile.lovable.app/" target="_blank">Portfolio</a>
+    </nav>
+    <p class="footer-copy">&copy; 2025 Chinmay Sawant</p>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.getElementById('theme-toggle');
+      var sunIcon = document.getElementById('icon-sun');
+      var moonIcon = document.getElementById('icon-moon');
+      function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        sunIcon.style.display = theme === 'dark' ? 'block' : 'none';
+        moonIcon.style.display = theme === 'dark' ? 'none' : 'block';
+      }
+      applyTheme(document.documentElement.getAttribute('data-theme') || 'light');
+      toggle.addEventListener('click', function () {
+        var now = document.documentElement.getAttribute('data-theme');
+        applyTheme(now === 'dark' ? 'light' : 'dark');
+      });
+    })();
+  </script>
+</body>
+</html>
