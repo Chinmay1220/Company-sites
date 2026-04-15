@@ -12,6 +12,12 @@
       "runtimeExecutable": "npx",
       "runtimeArgs": ["serve", "-l", "3001", "stuut"],
       "port": 3001
+    },
+    {
+      "name": "heliocampus-page",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "-l", "3002", "heliocampus"],
+      "port": 3002
     }
   ]
 }
