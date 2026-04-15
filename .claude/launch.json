@@ -18,6 +18,12 @@
       "runtimeExecutable": "npx",
       "runtimeArgs": ["serve", "-l", "3002", "heliocampus"],
       "port": 3002
+    },
+    {
+      "name": "heliocampus-ae-page",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "-l", "3003", "heliocampus-ae"],
+      "port": 3003
     }
   ]
 }
