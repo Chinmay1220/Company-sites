@@ -24,6 +24,12 @@
       "runtimeExecutable": "npx",
       "runtimeArgs": ["serve", "-l", "3003", "heliocampus-ae"],
       "port": 3003
+    },
+    {
+      "name": "burlebo-page",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "-l", "3004", "burlebo"],
+      "port": 3004
     }
   ]
 }

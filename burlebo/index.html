@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinmay Sawant - Why BURLEBO Should Hire Me</title>
+  <meta name="description" content="Data Engineer with 3+ years building production pipelines, dbt transformations, and BI dashboards on BigQuery. Ready to be BURLEBO's first data hire.">
+  <meta property="og:title" content="Why BURLEBO Should Hire Chinmay Sawant">
+  <meta property="og:description" content="3+ years building data infrastructure on GCP. Ready to lead BURLEBO's data function from the ground up.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-display: 'DM Serif Display', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+      --color-bg: #FAFAF8;
+      --color-surface: #FFFFFF;
+      --color-border: #E8E6E1;
+      --color-text-primary: #1A1A1A;
+      --color-text-secondary: #6B6B6B;
+      --color-text-muted: #9B9B9B;
+      --color-accent: #2A2A2A;
+      --color-number: #F0EDE8;
+      --color-pill-bg: #F0EDE8;
+      --color-pill-text: #3A3A3A;
+      --color-pill-border: #DDD9D1;
+      --color-header-bg: rgba(250, 250, 248, 0.85);
+      --color-result: #4A6741;
+      --color-match-bg: #F0EDE8;
+      --color-match-check: #4A6741;
+      --max-width: 900px;
+      --radius: 8px;
+    }
+    [data-theme="dark"] {
+      --color-bg: #141413;
+      --color-surface: #1C1C1A;
+      --color-border: #2E2E2A;
+      --color-text-primary: #EDEDEB;
+      --color-text-secondary: #A0A09B;
+      --color-text-muted: #6B6B66;
+      --color-accent: #E0DED8;
+      --color-number: #222220;
+      --color-pill-bg: #222220;
+      --color-pill-text: #C8C8C2;
+      --color-pill-border: #3A3A35;
+      --color-header-bg: rgba(20, 20, 19, 0.85);
+      --color-result: #8FBF88;
+      --color-match-bg: #1E1E1C;
+      --color-match-check: #8FBF88;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: var(--font-body); font-size: 16px; line-height: 1.6;
+      color: var(--color-text-primary); background-color: var(--color-bg);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    a { color: var(--color-text-primary); text-decoration-color: var(--color-border); text-underline-offset: 3px; transition: text-decoration-color 0.2s ease; }
+    a:hover { text-decoration-color: var(--color-text-primary); }
+
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--color-header-bg); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border); padding: 12px 24px;
+      display: flex; justify-content: space-between; align-items: center;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+    .wordmark { font-family: var(--font-display); font-size: 18px; color: var(--color-text-primary); text-decoration: none; }
+    .header-links { display: flex; gap: 16px; align-items: center; }
+    .header-links a { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); text-decoration: none; }
+    .header-links a:hover { color: var(--color-text-primary); }
+    .theme-toggle {
+      background: none; border: 1px solid var(--color-border); border-radius: 50%;
+      width: 36px; height: 36px; cursor: pointer; display: flex; align-items: center; justify-content: center;
+      color: var(--color-text-secondary); transition: border-color 0.2s ease, color 0.2s ease;
+    }
+    .theme-toggle:hover { border-color: var(--color-text-primary); color: var(--color-text-primary); }
+    .theme-toggle svg { width: 16px; height: 16px; }
+
+    main { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+
+    /* ========== FIRST FRAME ========== */
+    .first-frame { padding: 32px 0 24px; }
+
+    .hero-row { display: flex; align-items: center; gap: 28px; margin-bottom: 24px; }
+    .hero-avatar {
+      width: 240px; height: 240px; border-radius: 50%; object-fit: cover;
+      border: 3px solid var(--color-border); flex-shrink: 0;
+    }
+    .hero-info { flex: 1; }
+    .hero-info h1 { font-family: var(--font-display); font-size: 32px; font-weight: 400; line-height: 1.2; margin-bottom: 4px; }
+    .hero-role { font-size: 16px; font-weight: 500; color: var(--color-text-secondary); margin-bottom: 6px; }
+    .hero-context { font-size: 13px; color: var(--color-text-muted); margin-bottom: 10px; }
+    .hero-tagline { font-size: 15px; line-height: 1.5; color: var(--color-text-secondary); }
+
+    .stats-strip {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
+      border: 1px solid var(--color-border); border-radius: var(--radius);
+      padding: 16px; margin-bottom: 20px; text-align: center;
+    }
+    .stats-strip .s-num { display: block; font-family: var(--font-display); font-size: 28px; line-height: 1.2; color: var(--color-text-primary); }
+    .stats-strip .s-lbl { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; color: var(--color-text-muted); }
+
+    .skills-check {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 6px 24px; margin-bottom: 20px;
+    }
+    .skill-item {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 14px; color: var(--color-text-secondary); padding: 6px 0;
+    }
+    .skill-item .check { color: var(--color-match-check); font-weight: 700; font-size: 16px; flex-shrink: 0; }
+
+    .nav-row {
+      display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
+      padding-top: 16px; border-top: 1px solid var(--color-border);
+    }
+    .nav-pill {
+      font-size: 12px; font-weight: 500; text-decoration: none; letter-spacing: 0.5px;
+      color: var(--color-text-muted); border: 1px solid var(--color-border);
+      padding: 6px 14px; border-radius: 100px; transition: all 0.2s ease;
+    }
+    .nav-pill:hover { color: var(--color-text-primary); border-color: var(--color-text-secondary); }
+
+    /* ========== BELOW THE FOLD ========== */
+    section { padding: 56px 0; }
+    .section-label {
+      font-family: var(--font-body); font-size: 15px; font-weight: 500;
+      text-transform: uppercase; letter-spacing: 3px; color: var(--color-text-muted); margin-bottom: 28px;
+    }
+
+    #why-burlebo { padding-top: 40px; }
+    .why-text { font-size: 16px; line-height: 1.7; color: var(--color-text-secondary); }
+
+    /* Match Table */
+    .match-table {
+      width: 100%; border-collapse: separate; border-spacing: 0;
+      border: 1px solid var(--color-border); border-radius: var(--radius); overflow: hidden;
+    }
+    .match-table thead th {
+      font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px;
+      color: var(--color-text-muted); padding: 12px 16px; text-align: left;
+      background: var(--color-match-bg); border-bottom: 1px solid var(--color-border);
+    }
+    .match-table thead th:first-child { width: 45%; }
+    .match-table thead th:nth-child(2) { width: 10%; text-align: center; }
+    .match-table thead th:last-child { width: 45%; }
+    .match-table tbody td {
+      padding: 12px 16px; font-size: 14px; vertical-align: top;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .match-table tbody tr:last-child td { border-bottom: none; }
+    .match-table tbody tr:hover td { background: var(--color-match-bg); }
+    .match-table .col-need { color: var(--color-text-secondary); }
+    .match-table .col-check { text-align: center; color: var(--color-match-check); font-size: 18px; font-weight: 700; }
+    .match-table .col-have { color: var(--color-text-primary); font-weight: 500; }
+    @media (max-width: 600px) {
+      .match-table thead { display: none; }
+      .match-table, .match-table tbody, .match-table tr, .match-table td { display: block; }
+      .match-table tbody tr { padding: 14px; margin-bottom: 8px; background: var(--color-match-bg); border-radius: var(--radius); }
+      .match-table tbody td { border-bottom: none; padding: 2px 0; }
+      .match-table .col-check { text-align: left; }
+      .match-table .col-need::before { content: 'Need: '; font-weight: 700; color: var(--color-text-muted); }
+      .match-table .col-have::before { content: 'I bring: '; font-weight: 700; color: var(--color-match-check); }
+    }
+
+    /* Reason Cards */
+    #reasons { padding-bottom: 24px; }
+    .reason-card { padding: 40px 0; border-top: 1px solid var(--color-border); }
+    .reason-number { display: block; font-family: var(--font-display); font-size: 80px; line-height: 1; color: var(--color-number); margin-bottom: 12px; }
+    .reason-card h2 { font-family: var(--font-display); font-size: 24px; font-weight: 400; line-height: 1.3; margin-bottom: 16px; }
+    .reason-card p { color: var(--color-text-secondary); margin-bottom: 14px; font-size: 15px; }
+    .reason-card p:last-child { margin-bottom: 0; }
+    .result { font-weight: 500; color: var(--color-result) !important; }
+
+    /* Value Section */
+    .value-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+    .value-card {
+      border: 1px solid var(--color-border); border-radius: var(--radius);
+      padding: 24px; transition: border-color 0.3s ease;
+    }
+    .value-card:hover { border-color: var(--color-text-muted); }
+    .value-card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+    .value-card-icon {
+      width: 36px; height: 36px; border-radius: 8px;
+      background: var(--color-match-bg); display: flex; align-items: center; justify-content: center;
+      font-size: 16px; flex-shrink: 0;
+    }
+    .value-card h3 { font-family: var(--font-display); font-size: 18px; font-weight: 400; }
+    .value-list { list-style: none; padding: 0; margin: 0; }
+    .value-list li {
+      font-size: 14px; color: var(--color-text-secondary); padding: 6px 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .value-list li:last-child { border-bottom: none; }
+
+    /* Experience cards */
+    .exp-card {
+      border: 1px solid var(--color-border); border-radius: var(--radius);
+      padding: 20px; margin-bottom: 12px;
+    }
+    .exp-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; flex-wrap: wrap; gap: 4px; }
+    .exp-company { font-weight: 700; font-size: 15px; }
+    .exp-date { font-size: 13px; color: var(--color-text-muted); }
+    .exp-role { font-size: 14px; color: var(--color-text-secondary); margin-bottom: 10px; }
+    .exp-bullets { list-style: none; padding: 0; }
+    .exp-bullets li { position: relative; padding-left: 18px; font-size: 14px; color: var(--color-text-secondary); margin-bottom: 6px; }
+    .exp-bullets li::before { content: ''; position: absolute; left: 0; top: 9px; width: 5px; height: 5px; border-radius: 50%; background: var(--color-border); }
+    .exp-bullets .highlight { color: var(--color-text-primary); font-weight: 500; }
+
+    /* Stack Pills */
+    #stack { text-align: center; }
+    .pill-container { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+    .pill {
+      display: inline-flex; padding: 5px 14px; font-size: 12px; font-weight: 500;
+      border-radius: 100px; background: var(--color-pill-bg); color: var(--color-pill-text);
+      border: 1px solid var(--color-pill-border);
+    }
+    .pill-section { margin-bottom: 14px; }
+    .pill-section-label { font-size: 10px; font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-text-muted); margin-bottom: 8px; }
+
+    /* Success Timeline */
+    .success-list { list-style: none; padding: 0; }
+    .success-list li {
+      font-size: 15px; color: var(--color-text-secondary); padding: 12px 0;
+      border-bottom: 1px solid var(--color-border);
+      display: flex; align-items: baseline; gap: 10px;
+    }
+    .success-list li:last-child { border-bottom: none; }
+    .success-check { color: var(--color-match-check); font-weight: 700; font-size: 16px; flex-shrink: 0; }
+
+    /* Footer */
+    footer {
+      text-align: center; padding: 48px 24px; border-top: 1px solid var(--color-border);
+      max-width: var(--max-width); margin: 0 auto;
+    }
+    .footer-tagline { font-family: var(--font-display); font-size: 20px; margin-bottom: 20px; }
+    .footer-links { display: flex; gap: 24px; justify-content: center; margin-bottom: 24px; }
+    .footer-links a { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); text-decoration: none; }
+    .footer-links a:hover { color: var(--color-text-primary); }
+    .footer-copy { font-size: 12px; color: var(--color-text-muted); }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero-row { flex-direction: column; text-align: center; gap: 16px; }
+      .hero-avatar { width: 140px; height: 140px; }
+      .hero-info h1 { font-size: 26px; }
+      .stats-strip { grid-template-columns: repeat(2, 1fr); }
+      .stats-strip .s-num { font-size: 24px; }
+      .skills-check { grid-template-columns: 1fr; }
+    }
+    @media (min-width: 600px) {
+      .reason-number { font-size: 100px; }
+      .value-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (min-width: 960px) {
+      .hero-info h1 { font-size: 36px; }
+      .stats-strip .s-num { font-size: 32px; }
+    }
+    a:focus-visible, button:focus-visible { outline: 2px solid var(--color-text-primary); outline-offset: 2px; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="wordmark">Chinmay Sawant</a>
+    <div class="header-links">
+      <a href="https://github.com/Chinmay1220" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/chinmay-sawant-9b79a5192/" target="_blank">LinkedIn</a>
+      <a href="https://csprofile.lovable.app/" target="_blank">Portfolio</a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="display:none">
+          <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+        <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== FIRST FRAME ========== -->
+    <section class="first-frame">
+
+      <div class="hero-row">
+        <img class="hero-avatar" src="photo.png" alt="Chinmay Sawant">
+        <div class="hero-info">
+          <h1>Chinmay Sawant</h1>
+          <p class="hero-role">Lead Data &amp; Analytics Engineer &rarr; BURLEBO</p>
+          <p class="hero-context">Boston, MA &middot; MS Information Systems, Northeastern &middot; Open to relocating to Austin</p>
+          <p class="hero-tagline">3+ years building data infrastructure on GCP (BigQuery), dbt transformations, and self-serve dashboards from scratch. I've been the person who brings structure to messy data and makes it useful for leadership.</p>
+        </div>
+      </div>
+
+      <div class="stats-strip">
+        <div>
+          <span class="s-num">10+</span>
+          <span class="s-lbl">Reports consolidated</span>
+        </div>
+        <div>
+          <span class="s-num">15+</span>
+          <span class="s-lbl">Source systems</span>
+        </div>
+        <div>
+          <span class="s-num">$150K+</span>
+          <span class="s-lbl">Revenue surfaced</span>
+        </div>
+        <div>
+          <span class="s-num">95%</span>
+          <span class="s-lbl">Validation automated</span>
+        </div>
+      </div>
+
+      <div class="skills-check">
+        <div class="skill-item"><span class="check">&check;</span> Strong SQL + BigQuery (GCP)</div>
+        <div class="skill-item"><span class="check">&check;</span> Built dashboards for leadership</div>
+        <div class="skill-item"><span class="check">&check;</span> dbt + data modeling frameworks</div>
+        <div class="skill-item"><span class="check">&check;</span> Messy, evolving, multi-system data</div>
+        <div class="skill-item"><span class="check">&check;</span> Python for analysis &amp; automation</div>
+        <div class="skill-item"><span class="check">&check;</span> Data governance &amp; quality obsessed</div>
+        <div class="skill-item"><span class="check">&check;</span> Built from scratch / full ownership</div>
+        <div class="skill-item"><span class="check">&check;</span> Mentored teams &amp; scaled delivery</div>
+      </div>
+
+      <div class="nav-row">
+        <a href="#why-burlebo" class="nav-pill">Why BURLEBO</a>
+        <a href="#match" class="nav-pill">Full Skill Match</a>
+        <a href="#reasons" class="nav-pill">Why Me</a>
+        <a href="#value" class="nav-pill">What I'll Deliver</a>
+        <a href="#experience" class="nav-pill">Experience</a>
+        <a href="#success" class="nav-pill">6-12 Month Plan</a>
+        <a href="#stack" class="nav-pill">Tech Stack</a>
+      </div>
+
+    </section>
+
+    <!-- ========== BELOW THE FOLD ========== -->
+
+    <!-- Why BURLEBO -->
+    <section id="why-burlebo">
+      <p class="section-label">Why BURLEBO Excites Me</p>
+      <p class="why-text">BURLEBO is a brand that actually means something to its customers - outdoor clothing built for real life, not just marketing. What excites me is the data problem underneath: ecommerce, wholesale, and fulfillment systems generating data across Shopify, ShipHero, NuOrder, and more - but no dedicated person turning that into a strategic advantage. I've been the first data hire before. At S2N Health, I walked into fragmented reports and disconnected systems, and I built the entire analytics layer from scratch - pipelines, models, dashboards, governance. The idea of doing that for a growing brand like BURLEBO, working directly with leadership to define metrics that actually matter, and building a data function that scales with the company - that's exactly the kind of challenge I want.</p>
+    </section>
+
+    <!-- Full Skill Match -->
+    <section id="match">
+      <p class="section-label">What You Need &rarr; What I Bring</p>
+      <table class="match-table">
+        <thead>
+          <tr>
+            <th>BURLEBO Requires</th>
+            <th>Match</th>
+            <th>My Experience</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col-need">4-8+ years data analytics / analytics engineering</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">3+ years as Data Engineer at S2N Health (GCP/BigQuery) and Senior Data Engineer at Capgemini (Snowflake). MS in Info Systems.</td>
+          </tr>
+          <tr>
+            <td class="col-need">Strong SQL + modern data warehouses (BigQuery preferred)</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">BigQuery at S2N Health (17B+ records). Snowflake at Capgemini. SQL across every role - slashed query latency by 50%.</td>
+          </tr>
+          <tr>
+            <td class="col-need">Building dashboards used by business stakeholders</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Delivered Tableau dashboards across 5+ business teams. Consolidated 10+ reports into single self-serve layer.</td>
+          </tr>
+          <tr>
+            <td class="col-need">Working with messy or evolving data</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Ingested 15+ source systems - REST APIs, JSON, semi-structured data. Reduced data errors by 20%.</td>
+          </tr>
+          <tr>
+            <td class="col-need">Working independently / bringing structure to ambiguity</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Owned full data stack end-to-end at S2N Health. Zero handoffs - pipeline to dashboard, complete ownership.</td>
+          </tr>
+          <tr>
+            <td class="col-need">Translating data into business insights</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Translated GTM and product requirements into analytics-ready datasets surfacing $150K+ in revenue opportunities.</td>
+          </tr>
+          <tr>
+            <td class="col-need">Mentoring or guiding others</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Mentored junior engineers on SQL and dbt best practices at Capgemini. Improved team delivery velocity by 22%.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Three Reasons -->
+    <section id="reasons">
+      <p class="section-label">Why Me</p>
+      <article class="reason-card">
+        <span class="reason-number" aria-hidden="true">1</span>
+        <h2>I've been the first data hire before - I know how to build from zero</h2>
+        <p>At S2N Health, I walked into an environment with fragmented data, disconnected reports, and no centralized analytics. I built the entire data layer from scratch.</p>
+        <p>I architected <strong>dbt SQL models on BigQuery</strong> processing 17B+ monthly records with automated quality testing - row count, null, and referential integrity checks that eliminated 95% of manual validation. I consolidated 10+ disparate reports into a single self-serve Tableau dashboard layer that 5+ business teams used daily. I engineered Python ETL/ELT pipelines across structured and semi-structured sources, and optimized BigQuery performance to cut compute costs by 25%.</p>
+        <p>For BURLEBO, this means I can take your GCP environment, structure data from Shopify, ShipHero, and NuOrder into a clean, modeled warehouse, and deliver dashboards that leadership trusts - all within the first few months.</p>
+        <p class="result">I don't need someone to tell me what to build. I figure out what matters and ship it.</p>
+      </article>
+
+      <article class="reason-card">
+        <span class="reason-number" aria-hidden="true">2</span>
+        <h2>I replace spreadsheet workflows with scalable analytics</h2>
+        <p>One of BURLEBO's goals is replacing ad-hoc spreadsheet workflows with standardized, scalable reporting. I've done exactly this - multiple times.</p>
+        <p>At S2N Health, I took 10+ fragmented reports living in spreadsheets and email threads and replaced them with a unified dashboard layer on BigQuery + Tableau. Non-technical stakeholders went from requesting data pulls to self-serving their own answers.</p>
+        <p>At Capgemini, I built analytics-ready datasets serving 10+ business units, standardized reporting across departments, and deployed feature flag tracking infrastructure that gave product managers self-serve access to A/B test results - cutting time-to-insight by 40%.</p>
+        <p>I also built a <strong>Financial Forecasting System</strong> (dbt + Snowflake + Looker) that improved accuracy by 25% - the kind of product performance and inventory analytics BURLEBO needs as it scales.</p>
+      </article>
+
+      <article class="reason-card">
+        <span class="reason-number" aria-hidden="true">3</span>
+        <h2>I build systems and develop people</h2>
+        <p>This role isn't just about pipelines - it's about building a data function and mentoring the team that supports it. I've done both.</p>
+        <p>At Capgemini, I mentored junior engineers on SQL optimization and dbt transformation best practices, improving team delivery velocity by 22%. I instituted data governance, lineage tracking, and cataloging documentation across all pipelines - creating a foundation that junior team members could build on without depending on me for every question.</p>
+        <p>I shipped CI/CD workflows with GitHub Actions, Terraform, and Docker - establishing best practices for how the team ships, tests, and deploys. I didn't just build infrastructure; I built the processes and documentation that make a data function sustainable.</p>
+        <p class="result">I'm excited about growing into a data team lead as BURLEBO scales - that's exactly the trajectory I'm looking for.</p>
+      </article>
+    </section>
+
+    <!-- Value -->
+    <section id="value">
+      <p class="section-label">What I'll Deliver at BURLEBO</p>
+      <div class="value-grid">
+        <div class="value-card">
+          <div class="value-card-header">
+            <span class="value-card-icon">&#9881;</span>
+            <h3>Data Foundation</h3>
+          </div>
+          <ul class="value-list">
+            <li>Structure and model data from Shopify, ShipHero, NuOrder in BigQuery</li>
+            <li>Define core company metrics with consistency across teams</li>
+            <li>Identify and resolve data discrepancies across systems</li>
+          </ul>
+        </div>
+        <div class="value-card">
+          <div class="value-card-header">
+            <span class="value-card-icon">&#128202;</span>
+            <h3>Analytics &amp; Reporting</h3>
+          </div>
+          <ul class="value-list">
+            <li>Dashboards for leadership: product performance, inventory, customer behavior</li>
+            <li>Replace ad-hoc spreadsheets with standardized, scalable reporting</li>
+            <li>Proactive insights that impact revenue, operations, and efficiency</li>
+          </ul>
+        </div>
+        <div class="value-card">
+          <div class="value-card-header">
+            <span class="value-card-icon">&#127919;</span>
+            <h3>Team &amp; Function</h3>
+          </div>
+          <ul class="value-list">
+            <li>Mentor junior team members supporting analytics work</li>
+            <li>Establish best practices for modeling, reporting, and governance</li>
+            <li>Define the roadmap for how the data team scales with the business</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- What Success Looks Like -->
+    <section id="success">
+      <p class="section-label">What Success Looks Like (6-12 Months)</p>
+      <ul class="success-list">
+        <li><span class="success-check">&check;</span> Core company metrics clearly defined and trusted across teams</li>
+        <li><span class="success-check">&check;</span> Data discrepancies across systems identified and significantly reduced</li>
+        <li><span class="success-check">&check;</span> Leadership has reliable dashboards for key decisions</li>
+        <li><span class="success-check">&check;</span> Reporting is standardized and scalable - not ad-hoc</li>
+        <li><span class="success-check">&check;</span> Junior team members contributing effectively under my guidance</li>
+        <li><span class="success-check">&check;</span> A clear roadmap for how the data function scales with BURLEBO</li>
+      </ul>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <p class="section-label">Where I've Done This</p>
+      <div class="exp-card">
+        <div class="exp-header">
+          <span class="exp-company">S2N Health</span>
+          <span class="exp-date">Feb 2025 - Aug 2025 &middot; Boston</span>
+        </div>
+        <div class="exp-role">Data Engineer Co-op</div>
+        <ul class="exp-bullets">
+          <li>Architected dbt SQL models on <span class="highlight">BigQuery (GCP)</span> across 17B+ monthly records</li>
+          <li>Delivered Tableau dashboards consolidating <span class="highlight">10+ reports into single self-serve layer</span></li>
+          <li>Built for <span class="highlight">5+ business teams</span> of non-technical stakeholders</li>
+          <li>Engineered Python ETL/ELT pipelines, <span class="highlight">reducing data errors by 20%</span></li>
+          <li>Optimized BigQuery - <span class="highlight">25% cost reduction, 33% faster execution</span></li>
+        </ul>
+      </div>
+      <div class="exp-card">
+        <div class="exp-header">
+          <span class="exp-company">Capgemini</span>
+          <span class="exp-date">Jan 2021 - Jul 2023 &middot; Mumbai</span>
+        </div>
+        <div class="exp-role">Senior Data Engineer</div>
+        <ul class="exp-bullets">
+          <li>Built ETL/ELT pipelines ingesting <span class="highlight">15+ source systems</span> into Snowflake</li>
+          <li>Translated business requirements into datasets surfacing <span class="highlight">$150K+ in revenue</span></li>
+          <li>Slashed query latency by <span class="highlight">50%</span> through SQL rewrites and partitioning</li>
+          <li>Instituted data governance and lineage - <span class="highlight">30% fewer quality issues</span></li>
+          <li>Mentored junior engineers - <span class="highlight">22% faster team delivery</span></li>
+          <li>Deployed A/B testing infra across <span class="highlight">3+ product lines</span>, cutting time-to-insight by 40%</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Stack -->
+    <section id="stack">
+      <p class="section-label">Tech Stack</p>
+      <div class="pill-section">
+        <div class="pill-section-label">Languages &amp; Engineering</div>
+        <div class="pill-container">
+          <span class="pill">Python</span>
+          <span class="pill">SQL</span>
+          <span class="pill">PySpark</span>
+          <span class="pill">Scala</span>
+          <span class="pill">Pandas</span>
+          <span class="pill">ETL/ELT</span>
+          <span class="pill">Data Modeling</span>
+          <span class="pill">REST APIs</span>
+        </div>
+      </div>
+      <div class="pill-section">
+        <div class="pill-section-label">Cloud &amp; Platforms</div>
+        <div class="pill-container">
+          <span class="pill">BigQuery</span>
+          <span class="pill">GCP</span>
+          <span class="pill">Cloud SQL</span>
+          <span class="pill">Snowflake</span>
+          <span class="pill">Redshift</span>
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">Delta Lake</span>
+        </div>
+      </div>
+      <div class="pill-section">
+        <div class="pill-section-label">BI &amp; Dashboards</div>
+        <div class="pill-container">
+          <span class="pill">Tableau</span>
+          <span class="pill">Looker</span>
+          <span class="pill">Dimensional Modeling</span>
+        </div>
+      </div>
+      <div class="pill-section">
+        <div class="pill-section-label">DevOps &amp; Governance</div>
+        <div class="pill-container">
+          <span class="pill">dbt</span>
+          <span class="pill">Airflow</span>
+          <span class="pill">Kafka</span>
+          <span class="pill">CI/CD</span>
+          <span class="pill">Docker</span>
+          <span class="pill">GitHub Actions</span>
+          <span class="pill">Agile</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nice to Haves -->
+    <section id="bonus">
+      <p class="section-label">Your Nice-to-Haves I Also Cover</p>
+      <table class="match-table">
+        <thead>
+          <tr>
+            <th>BURLEBO Nice-to-Have</th>
+            <th>Match</th>
+            <th>My Experience</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col-need">GCP (BigQuery, Cloud SQL)</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">BigQuery is my primary warehouse. Built dbt models + optimized performance on GCP at S2N Health.</td>
+          </tr>
+          <tr>
+            <td class="col-need">dbt or data modeling frameworks</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">dbt across every role. Automated testing, dimensional modeling, transformation best practices.</td>
+          </tr>
+          <tr>
+            <td class="col-need">Python for analysis or automation</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Python ETL/ELT pipelines in production. Pandas, PySpark, automation scripts across every role.</td>
+          </tr>
+          <tr>
+            <td class="col-need">Multiple operational systems (WMS, ERP, etc.)</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Ingested 15+ source systems including REST APIs, JSON, databases. Built connectors via Airbyte architecture.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-tagline">Ready to build BURLEBO's data foundation and grow with the team.</p>
+    <nav class="footer-links" aria-label="External links">
+      <a href="https://github.com/Chinmay1220" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/chinmay-sawant-9b79a5192/" target="_blank">LinkedIn</a>
+      <a href="https://csprofile.lovable.app/" target="_blank">Portfolio</a>
+    </nav>
+    <p class="footer-copy">&copy; 2025 Chinmay Sawant</p>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.getElementById('theme-toggle');
+      var sunIcon = document.getElementById('icon-sun');
+      var moonIcon = document.getElementById('icon-moon');
+      function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        sunIcon.style.display = theme === 'dark' ? 'block' : 'none';
+        moonIcon.style.display = theme === 'dark' ? 'none' : 'block';
+      }
+      applyTheme(document.documentElement.getAttribute('data-theme') || 'light');
+      toggle.addEventListener('click', function () {
+        var now = document.documentElement.getAttribute('data-theme');
+        applyTheme(now === 'dark' ? 'light' : 'dark');
+      });
+    })();
+  </script>
+</body>
+</html>
