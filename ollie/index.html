@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinmay Sawant - Why Ollie Should Hire Me</title>
+  <meta name="description" content="Data Analyst with 2+ years in cohort analysis, A/B testing, and retention analytics on Snowflake and Looker. Here's why I'm the right fit for Ollie.">
+  <meta property="og:title" content="Why Ollie Should Hire Chinmay Sawant">
+  <meta property="og:description" content="2+ years translating user behavior into retention decisions - cohort analysis, A/B testing, Looker dashboards, and cross-functional analytical partnership.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-display: 'DM Serif Display', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+      --color-bg: #FAFAF8;
+      --color-surface: #FFFFFF;
+      --color-border: #E8E6E1;
+      --color-text-primary: #1A1A1A;
+      --color-text-secondary: #6B6B6B;
+      --color-text-muted: #9B9B9B;
+      --color-accent: #2A2A2A;
+      --color-number: #F0EDE8;
+      --color-pill-bg: #F0EDE8;
+      --color-pill-text: #3A3A3A;
+      --color-pill-border: #DDD9D1;
+      --color-header-bg: rgba(250, 250, 248, 0.85);
+      --color-result: #4A6741;
+      --color-match-bg: #F0EDE8;
+      --color-match-check: #4A6741;
+      --max-width: 900px;
+      --radius: 8px;
+    }
+    [data-theme="dark"] {
+      --color-bg: #141413;
+      --color-surface: #1C1C1A;
+      --color-border: #2E2E2A;
+      --color-text-primary: #EDEDEB;
+      --color-text-secondary: #A0A09B;
+      --color-text-muted: #6B6B66;
+      --color-accent: #E0DED8;
+      --color-number: #222220;
+      --color-pill-bg: #222220;
+      --color-pill-text: #C8C8C2;
+      --color-pill-border: #3A3A35;
+      --color-header-bg: rgba(20, 20, 19, 0.85);
+      --color-result: #8FBF88;
+      --color-match-bg: #1E1E1C;
+      --color-match-check: #8FBF88;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: var(--font-body); font-size: 16px; line-height: 1.6;
+      color: var(--color-text-primary); background-color: var(--color-bg);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    a { color: var(--color-text-primary); text-decoration-color: var(--color-border); text-underline-offset: 3px; transition: text-decoration-color 0.2s ease; }
+    a:hover { text-decoration-color: var(--color-text-primary); }
+
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--color-header-bg); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border); padding: 12px 24px;
+      display: flex; justify-content: space-between; align-items: center;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+    .wordmark { font-family: var(--font-display); font-size: 18px; color: var(--color-text-primary); text-decoration: none; }
+    .header-links { display: flex; gap: 16px; align-items: center; }
+    .header-links a { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); text-decoration: none; }
+    .header-links a:hover { color: var(--color-text-primary); }
+    .theme-toggle {
+      background: none; border: 1px solid var(--color-border); border-radius: 50%;
+      width: 36px; height: 36px; cursor: pointer; display: flex; align-items: center; justify-content: center;
+      color: var(--color-text-secondary); transition: border-color 0.2s ease, color 0.2s ease;
+    }
+    .theme-toggle:hover { border-color: var(--color-text-primary); color: var(--color-text-primary); }
+    .theme-toggle svg { width: 16px; height: 16px; }
+
+    main { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+
+    .first-frame { padding: 32px 0 24px; }
+    .hero-row { display: flex; align-items: center; gap: 28px; margin-bottom: 24px; }
+    .hero-avatar {
+      width: 240px; height: 240px; border-radius: 50%; object-fit: cover;
+      border: 3px solid var(--color-border); flex-shrink: 0;
+    }
+    .hero-info { flex: 1; }
+    .hero-info h1 { font-family: var(--font-display); font-size: 32px; font-weight: 400; line-height: 1.2; margin-bottom: 4px; }
+    .hero-role { font-size: 16px; font-weight: 500; color: var(--color-text-secondary); margin-bottom: 6px; }
+    .hero-context { font-size: 13px; color: var(--color-text-muted); margin-bottom: 10px; }
+    .hero-tagline { font-size: 15px; line-height: 1.5; color: var(--color-text-secondary); }
+
+    .stats-strip {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
+      border: 1px solid var(--color-border); border-radius: var(--radius);
+      padding: 16px; margin-bottom: 20px; text-align: center;
+    }
+    .stats-strip .s-num { display: block; font-family: var(--font-display); font-size: 28px; line-height: 1.2; color: var(--color-text-primary); }
+    .stats-strip .s-lbl { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; color: var(--color-text-muted); }
+
+    .skills-check { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 24px; margin-bottom: 20px; }
+    .skill-item { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--color-text-secondary); padding: 6px 0; }
+    .skill-item .check { color: var(--color-match-check); font-weight: 700; font-size: 16px; flex-shrink: 0; }
+
+    .nav-row {
+      display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
+      padding-top: 16px; border-top: 1px solid var(--color-border);
+    }
+    .nav-pill {
+      font-size: 12px; font-weight: 500; text-decoration: none; letter-spacing: 0.5px;
+      color: var(--color-text-muted); border: 1px solid var(--color-border);
+      padding: 6px 14px; border-radius: 100px; transition: all 0.2s ease;
+    }
+    .nav-pill:hover { color: var(--color-text-primary); border-color: var(--color-text-secondary); }
+
+    section { padding: 56px 0; }
+    .section-label {
+      font-family: var(--font-body); font-size: 15px; font-weight: 500;
+      text-transform: uppercase; letter-spacing: 3px; color: var(--color-text-muted); margin-bottom: 28px;
+    }
+
+    #why-ollie { padding-top: 40px; }
+    .why-text { font-size: 16px; line-height: 1.7; color: var(--color-text-secondary); }
+
+    .match-table {
+      width: 100%; border-collapse: separate; border-spacing: 0;
+      border: 1px solid var(--color-border); border-radius: var(--radius); overflow: hidden;
+    }
+    .match-table thead th {
+      font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px;
+      color: var(--color-text-muted); padding: 12px 16px; text-align: left;
+      background: var(--color-match-bg); border-bottom: 1px solid var(--color-border);
+    }
+    .match-table thead th:first-child { width: 45%; }
+    .match-table thead th:nth-child(2) { width: 10%; text-align: center; }
+    .match-table thead th:last-child { width: 45%; }
+    .match-table tbody td {
+      padding: 12px 16px; font-size: 14px; vertical-align: top;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .match-table tbody tr:last-child td { border-bottom: none; }
+    .match-table tbody tr:hover td { background: var(--color-match-bg); }
+    .match-table .col-need { color: var(--color-text-secondary); }
+    .match-table .col-check { text-align: center; color: var(--color-match-check); font-size: 18px; font-weight: 700; }
+    .match-table .col-have { color: var(--color-text-primary); font-weight: 500; }
+    @media (max-width: 600px) {
+      .match-table thead { display: none; }
+      .match-table, .match-table tbody, .match-table tr, .match-table td { display: block; }
+      .match-table tbody tr { padding: 14px; margin-bottom: 8px; background: var(--color-match-bg); border-radius: var(--radius); }
+      .match-table tbody td { border-bottom: none; padding: 2px 0; }
+      .match-table .col-check { text-align: left; }
+      .match-table .col-need::before { content: 'Need: '; font-weight: 700; color: var(--color-text-muted); }
+      .match-table .col-have::before { content: 'I bring: '; font-weight: 700; color: var(--color-match-check); }
+    }
+
+    #reasons { padding-bottom: 24px; }
+    .reason-card { padding: 40px 0; border-top: 1px solid var(--color-border); }
+    .reason-number { display: block; font-family: var(--font-display); font-size: 80px; line-height: 1; color: var(--color-number); margin-bottom: 12px; }
+    .reason-card h2 { font-family: var(--font-display); font-size: 24px; font-weight: 400; line-height: 1.3; margin-bottom: 16px; }
+    .reason-card p { color: var(--color-text-secondary); margin-bottom: 14px; font-size: 15px; }
+    .reason-card p:last-child { margin-bottom: 0; }
+    .result { font-weight: 500; color: var(--color-result) !important; }
+
+    .value-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+    .value-card { border: 1px solid var(--color-border); border-radius: var(--radius); padding: 24px; transition: border-color 0.3s ease; }
+    .value-card:hover { border-color: var(--color-text-muted); }
+    .value-card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+    .value-card-icon {
+      width: 36px; height: 36px; border-radius: 8px;
+      background: var(--color-match-bg); display: flex; align-items: center; justify-content: center;
+      font-size: 16px; flex-shrink: 0;
+    }
+    .value-card h3 { font-family: var(--font-display); font-size: 18px; font-weight: 400; }
+    .value-list { list-style: none; padding: 0; margin: 0; }
+    .value-list li { font-size: 14px; color: var(--color-text-secondary); padding: 6px 0; border-bottom: 1px solid var(--color-border); }
+    .value-list li:last-child { border-bottom: none; }
+
+    .exp-card { border: 1px solid var(--color-border); border-radius: var(--radius); padding: 20px; margin-bottom: 12px; }
+    .exp-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; flex-wrap: wrap; gap: 4px; }
+    .exp-company { font-weight: 700; font-size: 15px; }
+    .exp-date { font-size: 13px; color: var(--color-text-muted); }
+    .exp-role { font-size: 14px; color: var(--color-text-secondary); margin-bottom: 10px; }
+    .exp-bullets { list-style: none; padding: 0; }
+    .exp-bullets li { position: relative; padding-left: 18px; font-size: 14px; color: var(--color-text-secondary); margin-bottom: 6px; }
+    .exp-bullets li::before { content: ''; position: absolute; left: 0; top: 9px; width: 5px; height: 5px; border-radius: 50%; background: var(--color-border); }
+    .exp-bullets .highlight { color: var(--color-text-primary); font-weight: 500; }
+
+    #stack { text-align: center; }
+    .pill-container { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+    .pill {
+      display: inline-flex; padding: 5px 14px; font-size: 12px; font-weight: 500;
+      border-radius: 100px; background: var(--color-pill-bg); color: var(--color-pill-text);
+      border: 1px solid var(--color-pill-border);
+    }
+    .pill-section { margin-bottom: 14px; }
+    .pill-section-label { font-size: 10px; font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-text-muted); margin-bottom: 8px; }
+
+    footer {
+      text-align: center; padding: 48px 24px; border-top: 1px solid var(--color-border);
+      max-width: var(--max-width); margin: 0 auto;
+    }
+    .footer-tagline { font-family: var(--font-display); font-size: 20px; margin-bottom: 20px; }
+    .footer-links { display: flex; gap: 24px; justify-content: center; margin-bottom: 24px; }
+    .footer-links a { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); text-decoration: none; }
+    .footer-links a:hover { color: var(--color-text-primary); }
+    .footer-copy { font-size: 12px; color: var(--color-text-muted); }
+
+    @media (max-width: 600px) {
+      .hero-row { flex-direction: column; text-align: center; gap: 16px; }
+      .hero-avatar { width: 140px; height: 140px; }
+      .hero-info h1 { font-size: 26px; }
+      .stats-strip { grid-template-columns: repeat(2, 1fr); }
+      .stats-strip .s-num { font-size: 24px; }
+      .skills-check { grid-template-columns: 1fr; }
+    }
+    @media (min-width: 600px) {
+      .reason-number { font-size: 100px; }
+      .value-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (min-width: 960px) {
+      .hero-info h1 { font-size: 36px; }
+      .stats-strip .s-num { font-size: 32px; }
+    }
+    a:focus-visible, button:focus-visible { outline: 2px solid var(--color-text-primary); outline-offset: 2px; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="wordmark">Chinmay Sawant</a>
+    <div class="header-links">
+      <a href="https://github.com/Chinmay1220" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/chinmay-sawant-9b79a5192/" target="_blank">LinkedIn</a>
+      <a href="https://csprofile.lovable.app/" target="_blank">Portfolio</a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="display:none">
+          <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+        <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== FIRST FRAME ========== -->
+    <section class="first-frame">
+
+      <div class="hero-row">
+        <img class="hero-avatar" src="photo.png" alt="Chinmay Sawant">
+        <div class="hero-info">
+          <h1>Chinmay Sawant</h1>
+          <p class="hero-role">Data Analyst, Retention &rarr; Ollie</p>
+          <p class="hero-context">Boston, MA &middot; MS Information Systems, Northeastern &middot; US East Coast based</p>
+          <p class="hero-tagline">2+ years turning user behavior data into retention decisions - cohort analyses, A/B tests, and Looker dashboards on Snowflake. I'm relentlessly curious about why members churn, and just as relentless about finding what makes them stay.</p>
+        </div>
+      </div>
+
+      <div class="stats-strip">
+        <div>
+          <span class="s-num">17B+</span>
+          <span class="s-lbl">Records mined</span>
+        </div>
+        <div>
+          <span class="s-num">15+</span>
+          <span class="s-lbl">A/B tests analyzed</span>
+        </div>
+        <div>
+          <span class="s-num">$150K+</span>
+          <span class="s-lbl">Revenue surfaced</span>
+        </div>
+        <div>
+          <span class="s-num">50%</span>
+          <span class="s-lbl">Fewer ad-hoc requests</span>
+        </div>
+      </div>
+
+      <div class="skills-check">
+        <div class="skill-item"><span class="check">&check;</span> Cohort analysis &amp; retention metrics</div>
+        <div class="skill-item"><span class="check">&check;</span> A/B testing &amp; hypothesis-driven work</div>
+        <div class="skill-item"><span class="check">&check;</span> SQL &amp; Snowflake data analysis</div>
+        <div class="skill-item"><span class="check">&check;</span> Looker dashboards &amp; self-serve reporting</div>
+        <div class="skill-item"><span class="check">&check;</span> Python (Pandas, statistical analysis)</div>
+        <div class="skill-item"><span class="check">&check;</span> Mixpanel &amp; analytics platforms</div>
+        <div class="skill-item"><span class="check">&check;</span> Subscription &amp; engagement metrics</div>
+        <div class="skill-item"><span class="check">&check;</span> Cross-functional (product, marketing, CX)</div>
+      </div>
+
+      <div class="nav-row">
+        <a href="#why-ollie" class="nav-pill">Why Ollie</a>
+        <a href="#match" class="nav-pill">Full Skill Match</a>
+        <a href="#reasons" class="nav-pill">Why Me</a>
+        <a href="#value" class="nav-pill">What I'll Deliver</a>
+        <a href="#experience" class="nav-pill">Experience</a>
+        <a href="#stack" class="nav-pill">Tech Stack</a>
+      </div>
+
+    </section>
+
+    <!-- ========== BELOW THE FOLD ========== -->
+
+    <!-- Why Ollie -->
+    <section id="why-ollie">
+      <p class="section-label">Why Ollie Excites Me</p>
+      <p class="why-text">Subscription retention analytics is exactly where I want to spend my career - and Ollie is doing it in one of the most emotionally resonant consumer categories there is. Dog parents don't churn casually. Understanding what drives their engagement, loyalty, and reactivation means understanding something genuine about their relationship with their pet. That's a richer behavioral problem than most consumer subscriptions offer, and I find that genuinely exciting to dig into. I've spent 2+ years building exactly the analytical toolkit this role needs - cohort analyses on member data, A/B tests from design to go/no-go decision, Looker dashboards on Snowflake that give product and marketing teams real self-serve visibility into retention and engagement patterns. The cross-functional model here - data partnering directly with product, marketing, CX, and research - is how I do my best work. I don't just hand off analyses. I collaborate to make sure the right questions get asked first.</p>
+    </section>
+
+    <!-- Full Skill Match -->
+    <section id="match">
+      <p class="section-label">What You Need &rarr; What I Bring</p>
+      <table class="match-table">
+        <thead>
+          <tr>
+            <th>Ollie Requires</th>
+            <th>Match</th>
+            <th>My Experience</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col-need">2+ years data analytics / retention / lifecycle analytics</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">2+ years: Data Analyst at S2N Health (cohort & retention focus), Senior Data Analyst at Capgemini. Retention and engagement pattern analysis across member segments.</td>
+          </tr>
+          <tr>
+            <td class="col-need">SQL proficiency &amp; Snowflake</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Mined 17B+ monthly records in Snowflake using SQL at S2N Health. Consolidated datasets from 5+ sources into Snowflake at Capgemini, eliminating a 3-hour manual process.</td>
+          </tr>
+          <tr>
+            <td class="col-need">Cohort analysis, retention/churn, lifecycle performance</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Built Looker dashboards surfacing cohort and retention metrics across user segments at S2N Health. Conducted cohort analysis on member enrollment data, surfacing patterns across 3+ healthcare segments.</td>
+          </tr>
+          <tr>
+            <td class="col-need">A/B testing - test design, measurement, multivariate analysis</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Analyzed 15+ A/B tests across product features at Capgemini using SQL and Python, quantifying lift across user segments and informing go/no-go decisions that shipped 5+ product updates.</td>
+          </tr>
+          <tr>
+            <td class="col-need">Looker (and similar BI platforms)</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Built Looker dashboards at S2N Health cutting recurring ad-hoc requests by 50%. Looker on Snowflake-backed data in Collision Analysis project - sub-second queries for 8+ reports.</td>
+          </tr>
+          <tr>
+            <td class="col-need">Comfortable with Mixpanel, Segment, analytics platforms</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Mixpanel in analytics toolkit. Experienced sourcing and joining data from NoSQL sources, analytics platforms, and production databases.</td>
+          </tr>
+          <tr>
+            <td class="col-need">Python for statistical analysis &amp; data work</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Python (Pandas) across every role - A/B test analysis, cohort analysis, forecasting models (Prophet), data monitoring automation. Reclaimed 8+ analyst hours/week at Capgemini.</td>
+          </tr>
+          <tr>
+            <td class="col-need">Break down complex analytical problems efficiently</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Partnered with product, engineering, and marketing at Capgemini to turn ambiguous business questions into measurable analyses, shipping 10+ cross-functional deliverables.</td>
+          </tr>
+          <tr>
+            <td class="col-need">Translate technical analysis into clear, actionable insights</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Prepared EDA reports surfacing $150K+ in revenue opportunities for senior stakeholders. Delivered Tableau dashboards with drill-down from yearly to daily views for non-technical audiences.</td>
+          </tr>
+          <tr>
+            <td class="col-need">Exploratory analysis, hypothesis valuation, test design</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Identified 12+ critical data quality issues before production impact. Built Prophet forecasting models reducing forecast error from 12% MAPE to 9%.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Three Reasons -->
+    <section id="reasons">
+      <p class="section-label">Why Me</p>
+      <article class="reason-card">
+        <span class="reason-number" aria-hidden="true">1</span>
+        <h2>I've built real cohort and retention analytics - in production, on Snowflake and Looker</h2>
+        <p>Retention analytics isn't a new domain for me. I've been building the dashboards, running the cohort analyses, and surfacing the behavioral patterns that subscription and member-facing teams need to act on.</p>
+        <p>At <strong>S2N Health</strong>, I built Looker dashboards surfacing cohort and retention metrics across user segments - cutting recurring ad-hoc report requests from stakeholders by <strong>50%</strong>. I conducted cohort analysis on member enrollment data using SQL and Python, surfacing retention and engagement patterns across 3+ healthcare segments. The output wasn't just a chart - it was a self-serve tool that product and ops teams used to understand member behavior without waiting on an analyst every time.</p>
+        <p>I also mined <strong>17B+ monthly records</strong> in Snowflake using SQL, identifying 12+ critical data quality issues before they reached production dashboards - because retention analytics is only as good as the data powering it.</p>
+        <p class="result">Cohort analysis, retention curves, Looker on Snowflake - I'm already running this playbook.</p>
+      </article>
+
+      <article class="reason-card">
+        <span class="reason-number" aria-hidden="true">2</span>
+        <h2>I run A/B tests end-to-end - from hypothesis to go/no-go</h2>
+        <p>Thoughtful test design and measurement is exactly what Ollie's lifecycle comms and new member services need. I've been doing this at scale - not just pulling results, but owning the full experimental workflow.</p>
+        <p>At <strong>Capgemini</strong>, I analyzed <strong>15+ A/B tests</strong> across product features using SQL and Python, quantifying lift across user segments and informing go/no-go decisions that shipped <strong>5+ product updates</strong>. I didn't just calculate statistical significance - I understood what question each test was actually trying to answer, flagged when results were misleading, and helped teams avoid making decisions on noise.</p>
+        <p>I also built Prophet forecasting models on historical financial data in Python, reducing forecast error from 12% MAPE to 9% - the kind of hypothesis-driven, iterative quantitative work that makes experimentation programs progressively sharper over time.</p>
+        <p class="result">From test design to measurement to the decision that follows - I own the whole loop.</p>
+      </article>
+
+      <article class="reason-card">
+        <span class="reason-number" aria-hidden="true">3</span>
+        <h2>I'm the cross-functional analyst who makes ambiguous questions answerable</h2>
+        <p>The best retention analyses don't come from a data analyst working in isolation. They come from someone who sits at the table with product, marketing, CX, and research, and helps the team ask the right question before anyone writes a single line of SQL.</p>
+        <p>At Capgemini, I partnered with product, engineering, and marketing teams to turn ambiguous business questions into measurable analyses, shipping <strong>10+ cross-functional analytical deliverables</strong>. I spearheaded quantitative analysis across 10+ business units, surfacing <strong>$150K+ in revenue opportunities</strong> and driving product roadmap decisions for senior stakeholders.</p>
+        <p>At S2N Health, I partnered with engineering on reporting requirements and data element specifications across NoSQL and relational sources, aligning 8+ report specs across 3 data sources. I also orchestrated daily production data monitoring, reclaiming <strong>8+ analyst hours per week</strong> previously spent on manual checks - freeing up time for the exploratory work that actually moves the needle.</p>
+        <p class="result">I don't hand off analyses. I collaborate to make sure the insights land and drive action.</p>
+      </article>
+    </section>
+
+    <!-- Value -->
+    <section id="value">
+      <p class="section-label">What I'll Deliver at Ollie</p>
+      <div class="value-grid">
+        <div class="value-card">
+          <div class="value-card-header">
+            <span class="value-card-icon">&#128202;</span>
+            <h3>Retention &amp; Cohort Analytics</h3>
+          </div>
+          <ul class="value-list">
+            <li>Cohort analyses and retention curves identifying what makes Ollie members stick</li>
+            <li>Looker dashboards on Snowflake giving product and marketing self-serve visibility</li>
+            <li>Churn and reactivation patterns that inform lifecycle comms strategy</li>
+          </ul>
+        </div>
+        <div class="value-card">
+          <div class="value-card-header">
+            <span class="value-card-icon">&#9881;</span>
+            <h3>Experimentation &amp; Test Design</h3>
+          </div>
+          <ul class="value-list">
+            <li>Thoughtful A/B test design for new member experiences and features</li>
+            <li>Hypothesis valuation to inform initiative prioritization</li>
+            <li>Measurement frameworks that ensure we're constantly learning</li>
+          </ul>
+        </div>
+        <div class="value-card">
+          <div class="value-card-header">
+            <span class="value-card-icon">&#127919;</span>
+            <h3>Cross-Functional Partnership</h3>
+          </div>
+          <ul class="value-list">
+            <li>Go-to data resource for ad hoc analysis across product, marketing, and CX</li>
+            <li>Metric definition thought leadership that distinguishes signal from noise</li>
+            <li>Clear, actionable presentations that drive decisions - not just data drops</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <p class="section-label">Where I've Done This</p>
+      <div class="exp-card">
+        <div class="exp-header">
+          <span class="exp-company">S2N Health</span>
+          <span class="exp-date">Feb 2025 - Aug 2025 &middot; Boston</span>
+        </div>
+        <div class="exp-role">Data Analyst Co-op</div>
+        <ul class="exp-bullets">
+          <li>Mined <span class="highlight">17B+ monthly records in Snowflake</span> via SQL, identifying 12+ critical data quality issues before production impact</li>
+          <li>Built <span class="highlight">Looker dashboards surfacing cohort and retention metrics</span>, cutting recurring ad-hoc requests by 50%</li>
+          <li>Conducted cohort analysis on member enrollment data, surfacing <span class="highlight">retention and engagement patterns across 3+ segments</span></li>
+          <li>Partnered with engineering on reporting specs across NoSQL and relational sources, aligning 8+ specs across 3 data sources</li>
+        </ul>
+      </div>
+      <div class="exp-card">
+        <div class="exp-header">
+          <span class="exp-company">Capgemini</span>
+          <span class="exp-date">Jan 2021 - Jul 2023 &middot; Mumbai</span>
+        </div>
+        <div class="exp-role">Senior Data Analyst</div>
+        <ul class="exp-bullets">
+          <li>Analyzed <span class="highlight">15+ A/B tests</span> across product features, informing go/no-go decisions that shipped <span class="highlight">5+ product updates</span></li>
+          <li>Surfaced <span class="highlight">$150K+ in revenue opportunities</span> via EDA reports, driving product roadmap decisions for senior stakeholders</li>
+          <li>Consolidated transactional datasets from 5+ sources into Snowflake, <span class="highlight">eliminating a 3-hour manual process</span></li>
+          <li>Automated daily production monitoring, <span class="highlight">reclaiming 8+ analyst hours per week</span></li>
+          <li>Partnered cross-functionally to ship <span class="highlight">10+ analytical deliverables</span> from ambiguous business questions</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Stack -->
+    <section id="stack">
+      <p class="section-label">Tech Stack</p>
+      <div class="pill-section">
+        <div class="pill-section-label">Retention &amp; Analytics</div>
+        <div class="pill-container">
+          <span class="pill">Cohort Analysis</span>
+          <span class="pill">A/B Testing</span>
+          <span class="pill">Retention Metrics</span>
+          <span class="pill">Looker</span>
+          <span class="pill">Mixpanel</span>
+          <span class="pill">Statistical Analysis</span>
+          <span class="pill">Data Modeling</span>
+        </div>
+      </div>
+      <div class="pill-section">
+        <div class="pill-section-label">Languages &amp; Tools</div>
+        <div class="pill-container">
+          <span class="pill">SQL</span>
+          <span class="pill">Python</span>
+          <span class="pill">Pandas</span>
+          <span class="pill">Excel</span>
+          <span class="pill">ETL/ELT</span>
+          <span class="pill">REST APIs</span>
+          <span class="pill">NoSQL</span>
+        </div>
+      </div>
+      <div class="pill-section">
+        <div class="pill-section-label">Platforms &amp; Cloud</div>
+        <div class="pill-container">
+          <span class="pill">Snowflake</span>
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">Tableau</span>
+          <span class="pill">AWS</span>
+          <span class="pill">Azure</span>
+          <span class="pill">GCP</span>
+          <span class="pill">Data Governance</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-tagline">Ready to help Ollie understand what keeps members loyal - and build the retention analytics to prove it.</p>
+    <nav class="footer-links" aria-label="External links">
+      <a href="https://github.com/Chinmay1220" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/chinmay-sawant-9b79a5192/" target="_blank">LinkedIn</a>
+      <a href="https://csprofile.lovable.app/" target="_blank">Portfolio</a>
+    </nav>
+    <p class="footer-copy">&copy; 2025 Chinmay Sawant</p>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.getElementById('theme-toggle');
+      var sunIcon = document.getElementById('icon-sun');
+      var moonIcon = document.getElementById('icon-moon');
+      function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        sunIcon.style.display = theme === 'dark' ? 'block' : 'none';
+        moonIcon.style.display = theme === 'dark' ? 'none' : 'block';
+      }
+      applyTheme(document.documentElement.getAttribute('data-theme') || 'light');
+      toggle.addEventListener('click', function () {
+        var now = document.documentElement.getAttribute('data-theme');
+        applyTheme(now === 'dark' ? 'light' : 'dark');
+      });
+    })();
+  </script>
+</body>
+</html>
