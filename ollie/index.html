@@ -4,9 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chinmay Sawant - Why Ollie Should Hire Me</title>
-  <meta name="description" content="Data Analyst with 2+ years in cohort analysis, A/B testing, retention/LTV analytics on Snowflake and Looker. Here's why I'm the right fit for Ollie.">
+  <meta name="description" content="Data Analyst with 2+ years in cohort analysis, A/B testing, and retention/LTV analytics on Snowflake and Looker. Here's why I'm the right fit for Ollie.">
   <meta property="og:title" content="Why Ollie Should Hire Chinmay Sawant">
-  <meta property="og:description" content="2+ years translating member behavior into retention, churn, and LTV decisions - cohort analysis, A/B testing, Looker dashboards, Segment, and cross-functional partnership.">
   <meta property="og:type" content="website">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +30,6 @@
       --color-text-primary: #1A1A1A;
       --color-text-secondary: #6B6B6B;
       --color-text-muted: #9B9B9B;
-      --color-accent: #2A2A2A;
       --color-number: #F0EDE8;
       --color-pill-bg: #F0EDE8;
       --color-pill-text: #3A3A3A;
@@ -42,11 +40,6 @@
       --color-match-check: #4A6741;
       --max-width: 900px;
       --radius: 8px;
-      --heat-5: #4A6741; --heat-5-txt: #fff;
-      --heat-4: #6B9B62; --heat-4-txt: #fff;
-      --heat-3: #8DBF84; --heat-3-txt: #1a1a1a;
-      --heat-2: #B5D5B0; --heat-2-txt: #1a1a1a;
-      --heat-1: #DCEEDA; --heat-1-txt: #4a4a4a;
     }
     [data-theme="dark"] {
       --color-bg: #141413;
@@ -55,7 +48,6 @@
       --color-text-primary: #EDEDEB;
       --color-text-secondary: #A0A09B;
       --color-text-muted: #6B6B66;
-      --color-accent: #E0DED8;
       --color-number: #222220;
       --color-pill-bg: #222220;
       --color-pill-text: #C8C8C2;
@@ -64,20 +56,11 @@
       --color-result: #8FBF88;
       --color-match-bg: #1E1E1C;
       --color-match-check: #8FBF88;
-      --heat-5: #3a5934; --heat-5-txt: #e0e0d8;
-      --heat-4: #4e7a47; --heat-4-txt: #e0e0d8;
-      --heat-3: #5a8a53; --heat-3-txt: #e0e0d8;
-      --heat-2: #2e4a2b; --heat-2-txt: #a0c09b;
-      --heat-1: #1e2e1c; --heat-1-txt: #6B9B62;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-    body {
-      font-family: var(--font-body); font-size: 16px; line-height: 1.6;
-      color: var(--color-text-primary); background-color: var(--color-bg);
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
+    body { font-family: var(--font-body); font-size: 16px; line-height: 1.6; color: var(--color-text-primary); background-color: var(--color-bg); transition: background-color 0.3s ease, color 0.3s ease; }
     a { color: var(--color-text-primary); text-decoration-color: var(--color-border); text-underline-offset: 3px; transition: text-decoration-color 0.2s ease; }
     a:hover { text-decoration-color: var(--color-text-primary); }
 
@@ -86,36 +69,27 @@
       background: var(--color-header-bg); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--color-border); padding: 12px 24px;
       display: flex; justify-content: space-between; align-items: center;
-      transition: background-color 0.3s ease, border-color 0.3s ease;
     }
     .wordmark { font-family: var(--font-display); font-size: 18px; color: var(--color-text-primary); text-decoration: none; }
     .header-links { display: flex; gap: 16px; align-items: center; }
     .header-links a { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); text-decoration: none; }
     .header-links a:hover { color: var(--color-text-primary); }
-    .theme-toggle {
-      background: none; border: 1px solid var(--color-border); border-radius: 50%;
-      width: 36px; height: 36px; cursor: pointer; display: flex; align-items: center; justify-content: center;
-      color: var(--color-text-secondary); transition: border-color 0.2s ease, color 0.2s ease;
-    }
+    .theme-toggle { background: none; border: 1px solid var(--color-border); border-radius: 50%; width: 36px; height: 36px; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--color-text-secondary); transition: border-color 0.2s ease, color 0.2s ease; }
     .theme-toggle:hover { border-color: var(--color-text-primary); color: var(--color-text-primary); }
     .theme-toggle svg { width: 16px; height: 16px; }
 
     main { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
 
+    /* FIRST FRAME */
     .first-frame { padding: 32px 0 24px; }
     .hero-row { display: flex; align-items: center; gap: 28px; margin-bottom: 24px; }
     .hero-avatar { width: 240px; height: 240px; border-radius: 50%; object-fit: cover; border: 3px solid var(--color-border); flex-shrink: 0; }
-    .hero-info { flex: 1; }
     .hero-info h1 { font-family: var(--font-display); font-size: 32px; font-weight: 400; line-height: 1.2; margin-bottom: 4px; }
     .hero-role { font-size: 16px; font-weight: 500; color: var(--color-text-secondary); margin-bottom: 6px; }
     .hero-context { font-size: 13px; color: var(--color-text-muted); margin-bottom: 10px; }
     .hero-tagline { font-size: 15px; line-height: 1.5; color: var(--color-text-secondary); }
 
-    .stats-strip {
-      display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
-      border: 1px solid var(--color-border); border-radius: var(--radius);
-      padding: 16px; margin-bottom: 20px; text-align: center;
-    }
+    .stats-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; border: 1px solid var(--color-border); border-radius: var(--radius); padding: 16px; margin-bottom: 20px; text-align: center; }
     .stats-strip .s-num { display: block; font-family: var(--font-display); font-size: 28px; line-height: 1.2; color: var(--color-text-primary); }
     .stats-strip .s-lbl { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; color: var(--color-text-muted); }
 
@@ -124,158 +98,77 @@
     .skill-item .check { color: var(--color-match-check); font-weight: 700; font-size: 16px; flex-shrink: 0; }
 
     .nav-row { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; padding-top: 16px; border-top: 1px solid var(--color-border); }
-    .nav-pill {
-      font-size: 12px; font-weight: 500; text-decoration: none; letter-spacing: 0.5px;
-      color: var(--color-text-muted); border: 1px solid var(--color-border);
-      padding: 6px 14px; border-radius: 100px; transition: all 0.2s ease;
-    }
+    .nav-pill { font-size: 12px; font-weight: 500; text-decoration: none; letter-spacing: 0.5px; color: var(--color-text-muted); border: 1px solid var(--color-border); padding: 6px 14px; border-radius: 100px; transition: all 0.2s ease; }
     .nav-pill:hover { color: var(--color-text-primary); border-color: var(--color-text-secondary); }
 
-    section { padding: 56px 0; }
-    .section-label {
-      font-family: var(--font-body); font-size: 15px; font-weight: 500;
-      text-transform: uppercase; letter-spacing: 3px; color: var(--color-text-muted); margin-bottom: 28px;
-    }
+    section { padding: 48px 0; }
+    .section-label { font-family: var(--font-body); font-size: 15px; font-weight: 500; text-transform: uppercase; letter-spacing: 3px; color: var(--color-text-muted); margin-bottom: 20px; }
 
+    /* WHY */
     #why-ollie { padding-top: 40px; }
-    .why-text { font-size: 16px; line-height: 1.7; color: var(--color-text-secondary); }
+    .why-text { font-size: 15px; line-height: 1.7; color: var(--color-text-secondary); }
 
-    .match-table {
-      width: 100%; border-collapse: separate; border-spacing: 0;
-      border: 1px solid var(--color-border); border-radius: var(--radius); overflow: hidden;
-    }
-    .match-table thead th {
-      font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px;
-      color: var(--color-text-muted); padding: 12px 16px; text-align: left;
-      background: var(--color-match-bg); border-bottom: 1px solid var(--color-border);
-    }
-    .match-table thead th:first-child { width: 45%; }
-    .match-table thead th:nth-child(2) { width: 10%; text-align: center; }
-    .match-table thead th:last-child { width: 45%; }
-    .match-table tbody td { padding: 12px 16px; font-size: 14px; vertical-align: top; border-bottom: 1px solid var(--color-border); }
+    /* MATCH TABLE */
+    .match-table { width: 100%; border-collapse: separate; border-spacing: 0; border: 1px solid var(--color-border); border-radius: var(--radius); overflow: hidden; }
+    .match-table thead th { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-text-muted); padding: 10px 16px; text-align: left; background: var(--color-match-bg); border-bottom: 1px solid var(--color-border); }
+    .match-table thead th:nth-child(2) { width: 8%; text-align: center; }
+    .match-table tbody td { padding: 10px 16px; font-size: 14px; vertical-align: top; border-bottom: 1px solid var(--color-border); }
     .match-table tbody tr:last-child td { border-bottom: none; }
     .match-table tbody tr:hover td { background: var(--color-match-bg); }
-    .match-table .col-need { color: var(--color-text-secondary); }
+    .match-table .col-need { color: var(--color-text-secondary); width: 42%; }
     .match-table .col-check { text-align: center; color: var(--color-match-check); font-size: 18px; font-weight: 700; }
     .match-table .col-have { color: var(--color-text-primary); font-weight: 500; }
     @media (max-width: 600px) {
       .match-table thead { display: none; }
       .match-table, .match-table tbody, .match-table tr, .match-table td { display: block; }
-      .match-table tbody tr { padding: 14px; margin-bottom: 8px; background: var(--color-match-bg); border-radius: var(--radius); }
+      .match-table tbody tr { padding: 12px; margin-bottom: 8px; background: var(--color-match-bg); border-radius: var(--radius); }
       .match-table tbody td { border-bottom: none; padding: 2px 0; }
       .match-table .col-check { text-align: left; }
       .match-table .col-need::before { content: 'Need: '; font-weight: 700; color: var(--color-text-muted); }
       .match-table .col-have::before { content: 'I bring: '; font-weight: 700; color: var(--color-match-check); }
     }
 
-    #reasons { padding-bottom: 24px; }
-    .reason-card { padding: 40px 0; border-top: 1px solid var(--color-border); }
-    .reason-number { display: block; font-family: var(--font-display); font-size: 80px; line-height: 1; color: var(--color-number); margin-bottom: 12px; }
-    .reason-card h2 { font-family: var(--font-display); font-size: 24px; font-weight: 400; line-height: 1.3; margin-bottom: 16px; }
-    .reason-card p { color: var(--color-text-secondary); margin-bottom: 14px; font-size: 15px; }
+    /* REASONS */
+    #reasons { padding-bottom: 16px; }
+    .reason-card { padding: 32px 0; border-top: 1px solid var(--color-border); }
+    .reason-number { display: block; font-family: var(--font-display); font-size: 72px; line-height: 1; color: var(--color-number); margin-bottom: 10px; }
+    .reason-card h2 { font-family: var(--font-display); font-size: 22px; font-weight: 400; line-height: 1.3; margin-bottom: 12px; }
+    .reason-card p { color: var(--color-text-secondary); margin-bottom: 12px; font-size: 14px; line-height: 1.65; }
     .reason-card p:last-child { margin-bottom: 0; }
     .result { font-weight: 500; color: var(--color-result) !important; }
 
-    /* ========== DASHBOARD SECTION ========== */
-    #dashboards { padding-bottom: 24px; }
-    .dash-intro { font-size: 15px; color: var(--color-text-secondary); margin-bottom: 32px; line-height: 1.6; }
-    .dash-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
-
-    .dash-card {
-      border: 1px solid var(--color-border); border-radius: var(--radius);
-      overflow: hidden; transition: border-color 0.2s ease;
-    }
-    .dash-card:hover { border-color: var(--color-text-muted); }
-    .dash-card-header {
-      padding: 14px 18px 10px; border-bottom: 1px solid var(--color-border);
-      background: var(--color-match-bg);
-      display: flex; align-items: center; justify-content: space-between;
-    }
-    .dash-card-title { font-size: 13px; font-weight: 700; color: var(--color-text-primary); }
-    .dash-card-badge {
-      font-size: 10px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px;
-      color: var(--color-match-check); background: var(--color-surface);
-      border: 1px solid var(--color-border); border-radius: 100px; padding: 2px 8px;
-    }
-    .dash-card-body { padding: 18px; }
-
-    /* COHORT HEATMAP */
-    .heatmap { width: 100%; border-collapse: collapse; font-size: 12px; }
-    .heatmap th {
-      font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px;
-      color: var(--color-text-muted); padding: 6px 10px; text-align: center; white-space: nowrap;
-    }
-    .heatmap th:first-child { text-align: left; }
-    .heatmap td { padding: 5px 8px; text-align: center; font-size: 12px; font-weight: 600; border-radius: 4px; }
-    .heatmap td:first-child { font-size: 11px; font-weight: 500; color: var(--color-text-secondary); text-align: left; padding-right: 12px; }
-    .h5 { background: var(--heat-5); color: var(--heat-5-txt); }
-    .h4 { background: var(--heat-4); color: var(--heat-4-txt); }
-    .h3 { background: var(--heat-3); color: var(--heat-3-txt); }
-    .h2 { background: var(--heat-2); color: var(--heat-2-txt); }
-    .h1 { background: var(--heat-1); color: var(--heat-1-txt); }
-    .hna { background: transparent; color: var(--color-text-muted); font-weight: 400; }
-    .heatmap-legend { display: flex; align-items: center; gap: 6px; margin-top: 12px; font-size: 11px; color: var(--color-text-muted); }
-    .heatmap-legend span { display: inline-block; width: 14px; height: 14px; border-radius: 3px; }
-
-    /* LTV CHART */
-    .ltv-chart-wrap { position: relative; }
-    .ltv-chart-wrap svg { width: 100%; height: auto; display: block; }
-    .ltv-legend { display: flex; gap: 20px; margin-top: 12px; flex-wrap: wrap; }
-    .ltv-legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--color-text-secondary); }
-    .ltv-legend-line { width: 24px; height: 3px; border-radius: 2px; }
-
-    /* A/B CARD */
-    .ab-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    .ab-variant { border: 1px solid var(--color-border); border-radius: var(--radius); padding: 16px; }
-    .ab-variant.winner { border-color: var(--color-match-check); background: var(--color-match-bg); }
-    .ab-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--color-text-muted); margin-bottom: 8px; }
-    .ab-value { font-family: var(--font-display); font-size: 36px; line-height: 1; color: var(--color-text-primary); margin-bottom: 4px; }
-    .ab-variant.winner .ab-value { color: var(--color-match-check); }
-    .ab-sub { font-size: 12px; color: var(--color-text-secondary); }
-    .ab-bar-wrap { margin: 10px 0 6px; background: var(--color-border); border-radius: 100px; height: 6px; overflow: hidden; }
-    .ab-bar { height: 100%; border-radius: 100px; background: var(--color-text-muted); }
-    .ab-variant.winner .ab-bar { background: var(--color-match-check); }
-    .ab-stats { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--color-border); display: flex; gap: 20px; flex-wrap: wrap; }
-    .ab-stat { font-size: 12px; }
-    .ab-stat-label { color: var(--color-text-muted); font-size: 10px; text-transform: uppercase; letter-spacing: 0.8px; display: block; }
-    .ab-stat-val { font-weight: 700; color: var(--color-text-primary); }
-    .ab-stat-val.positive { color: var(--color-match-check); }
-
-    @media (max-width: 600px) {
-      .ab-wrap { grid-template-columns: 1fr; }
-      .ab-value { font-size: 28px; }
-    }
-
-    /* VALUE CARDS */
-    .value-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
-    .value-card { border: 1px solid var(--color-border); border-radius: var(--radius); padding: 24px; transition: border-color 0.3s ease; }
+    /* VALUE */
+    .value-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    .value-card { border: 1px solid var(--color-border); border-radius: var(--radius); padding: 20px; transition: border-color 0.3s ease; }
     .value-card:hover { border-color: var(--color-text-muted); }
-    .value-card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
-    .value-card-icon { width: 36px; height: 36px; border-radius: 8px; background: var(--color-match-bg); display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
-    .value-card h3 { font-family: var(--font-display); font-size: 18px; font-weight: 400; }
+    .value-card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+    .value-card-icon { width: 32px; height: 32px; border-radius: 7px; background: var(--color-match-bg); display: flex; align-items: center; justify-content: center; font-size: 15px; flex-shrink: 0; }
+    .value-card h3 { font-family: var(--font-display); font-size: 17px; font-weight: 400; }
     .value-list { list-style: none; padding: 0; margin: 0; }
-    .value-list li { font-size: 14px; color: var(--color-text-secondary); padding: 6px 0; border-bottom: 1px solid var(--color-border); }
+    .value-list li { font-size: 13px; color: var(--color-text-secondary); padding: 5px 0; border-bottom: 1px solid var(--color-border); }
     .value-list li:last-child { border-bottom: none; }
 
-    .exp-card { border: 1px solid var(--color-border); border-radius: var(--radius); padding: 20px; margin-bottom: 12px; }
-    .exp-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; flex-wrap: wrap; gap: 4px; }
+    /* EXPERIENCE */
+    .exp-card { border: 1px solid var(--color-border); border-radius: var(--radius); padding: 18px; margin-bottom: 12px; }
+    .exp-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; flex-wrap: wrap; gap: 4px; }
     .exp-company { font-weight: 700; font-size: 15px; }
     .exp-date { font-size: 13px; color: var(--color-text-muted); }
-    .exp-role { font-size: 14px; color: var(--color-text-secondary); margin-bottom: 10px; }
+    .exp-role { font-size: 13px; color: var(--color-text-secondary); margin-bottom: 10px; }
     .exp-bullets { list-style: none; padding: 0; }
-    .exp-bullets li { position: relative; padding-left: 18px; font-size: 14px; color: var(--color-text-secondary); margin-bottom: 6px; }
-    .exp-bullets li::before { content: ''; position: absolute; left: 0; top: 9px; width: 5px; height: 5px; border-radius: 50%; background: var(--color-border); }
+    .exp-bullets li { position: relative; padding-left: 16px; font-size: 13px; color: var(--color-text-secondary); margin-bottom: 5px; }
+    .exp-bullets li::before { content: ''; position: absolute; left: 0; top: 8px; width: 5px; height: 5px; border-radius: 50%; background: var(--color-border); }
     .exp-bullets .highlight { color: var(--color-text-primary); font-weight: 500; }
 
+    /* STACK */
     #stack { text-align: center; }
     .pill-container { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
-    .pill { display: inline-flex; padding: 5px 14px; font-size: 12px; font-weight: 500; border-radius: 100px; background: var(--color-pill-bg); color: var(--color-pill-text); border: 1px solid var(--color-pill-border); }
-    .pill-section { margin-bottom: 14px; }
+    .pill { display: inline-flex; padding: 5px 13px; font-size: 12px; font-weight: 500; border-radius: 100px; background: var(--color-pill-bg); color: var(--color-pill-text); border: 1px solid var(--color-pill-border); }
+    .pill-section { margin-bottom: 12px; }
     .pill-section-label { font-size: 10px; font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-text-muted); margin-bottom: 8px; }
 
-    footer { text-align: center; padding: 48px 24px; border-top: 1px solid var(--color-border); max-width: var(--max-width); margin: 0 auto; }
-    .footer-tagline { font-family: var(--font-display); font-size: 20px; margin-bottom: 20px; }
-    .footer-links { display: flex; gap: 24px; justify-content: center; margin-bottom: 24px; }
+    footer { text-align: center; padding: 40px 24px; border-top: 1px solid var(--color-border); max-width: var(--max-width); margin: 0 auto; }
+    .footer-tagline { font-family: var(--font-display); font-size: 19px; margin-bottom: 18px; }
+    .footer-links { display: flex; gap: 24px; justify-content: center; margin-bottom: 20px; }
     .footer-links a { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); text-decoration: none; }
     .footer-links a:hover { color: var(--color-text-primary); }
     .footer-copy { font-size: 12px; color: var(--color-text-muted); }
@@ -289,10 +182,8 @@
       .skills-check { grid-template-columns: 1fr; }
     }
     @media (min-width: 600px) {
-      .reason-number { font-size: 100px; }
+      .reason-number { font-size: 90px; }
       .value-grid { grid-template-columns: repeat(3, 1fr); }
-      .dash-grid { grid-template-columns: 1fr 1fr; }
-      .dash-grid .dash-card:first-child { grid-column: 1 / -1; }
     }
     @media (min-width: 960px) {
       .hero-info h1 { font-size: 36px; }
@@ -321,7 +212,7 @@
   </header>
 
   <main>
-    <!-- ========== FIRST FRAME ========== -->
+    <!-- FIRST FRAME -->
     <section class="first-frame">
       <div class="hero-row">
         <img class="hero-avatar" src="photo.png" alt="Chinmay Sawant">
@@ -329,7 +220,7 @@
           <h1>Chinmay Sawant</h1>
           <p class="hero-role">Data Analyst, Retention &rarr; Ollie</p>
           <p class="hero-context">Boston, MA &middot; MS Information Systems, Northeastern &middot; US East Coast based</p>
-          <p class="hero-tagline">2+ years turning member behavior into retention, churn, and LTV decisions - cohort analyses, A/B tests, and Looker dashboards on Snowflake. I'm relentlessly curious about why members churn, and just as relentless about finding what makes them stay for life.</p>
+          <p class="hero-tagline">2+ years turning member behavior into retention, churn, and LTV decisions - cohort analyses, A/B tests, and Looker dashboards on Snowflake. Relentlessly curious about why members churn and what makes them stay for life.</p>
         </div>
       </div>
 
@@ -357,93 +248,74 @@
         <div class="skill-item"><span class="check">&check;</span> A/B testing &amp; hypothesis-driven work</div>
         <div class="skill-item"><span class="check">&check;</span> SQL &amp; Snowflake data analysis</div>
         <div class="skill-item"><span class="check">&check;</span> Looker dashboards &amp; self-serve reporting</div>
-        <div class="skill-item"><span class="check">&check;</span> Segment &amp; event analytics (Mixpanel)</div>
-        <div class="skill-item"><span class="check">&check;</span> Python (Pandas, statistical analysis)</div>
+        <div class="skill-item"><span class="check">&check;</span> Segment &amp; Mixpanel event analytics</div>
         <div class="skill-item"><span class="check">&check;</span> Churn, reactivation &amp; lifecycle analytics</div>
+        <div class="skill-item"><span class="check">&check;</span> Python (Pandas, statistical analysis)</div>
         <div class="skill-item"><span class="check">&check;</span> Cross-functional (product, marketing, CX)</div>
       </div>
 
       <div class="nav-row">
         <a href="#why-ollie" class="nav-pill">Why Ollie</a>
-        <a href="#match" class="nav-pill">Full Skill Match</a>
+        <a href="#match" class="nav-pill">Skill Match</a>
         <a href="#reasons" class="nav-pill">Why Me</a>
-        <a href="#dashboards" class="nav-pill">Dashboard Samples</a>
         <a href="#value" class="nav-pill">What I'll Deliver</a>
         <a href="#experience" class="nav-pill">Experience</a>
         <a href="#stack" class="nav-pill">Tech Stack</a>
       </div>
     </section>
 
-    <!-- ========== BELOW THE FOLD ========== -->
-
     <!-- Why Ollie -->
     <section id="why-ollie">
       <p class="section-label">Why Ollie Excites Me</p>
-      <p class="why-text">I have a dog. I know exactly the feeling of wanting only the best for him - and I know how quickly a subscription becomes a non-negotiable part of his routine. That's what makes Ollie's retention problem so interesting: dog parents don't churn casually. When they do, it signals something real - a life change, a trust gap, a missed moment in the member journey. Finding those signals and acting on them before they lead to cancellation is the kind of problem I genuinely love working on.</p>
-      <p class="why-text" style="margin-top:14px;">I've spent 2+ years building the exact analytical toolkit this role needs - cohort analyses on member data, A/B tests from design to go/no-go, LTV curves that separate high-value from at-risk segments, and Looker dashboards on Snowflake that give lifecycle, product, and marketing teams real self-serve visibility. I'm also comfortable with imperfect business questions - the kind where the ask is fuzzy, the data is messy, and the real job is figuring out what question to answer before writing a single line of SQL. That's where I thrive.</p>
+      <p class="why-text">I have a dog - I know exactly how quickly an Ollie subscription becomes a non-negotiable part of his routine. That's what makes the retention problem here so interesting: dog parents don't churn casually. When they do, it signals something real. Finding those signals before they lead to cancellation, designing the right lifecycle interventions, and measuring whether they work - that's exactly the kind of work I've been doing for 2+ years. I'm also at home with imperfect business questions: the kind where the ask is fuzzy, the data is messy, and the real job is figuring out what's actually worth measuring first.</p>
     </section>
 
-    <!-- Full Skill Match -->
+    <!-- Skill Match -->
     <section id="match">
       <p class="section-label">What You Need &rarr; What I Bring</p>
       <table class="match-table">
         <thead>
           <tr>
             <th>Ollie Requires</th>
-            <th>Match</th>
+            <th></th>
             <th>My Experience</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="col-need">2+ years retention / lifecycle / subscription analytics</td>
-            <td class="col-check">&check;</td>
-            <td class="col-have">2+ years: Data Analyst at S2N Health (cohort & retention focus), Senior Data Analyst at Capgemini. Built retention curves, cohort analyses, and lifecycle engagement dashboards.</td>
-          </tr>
-          <tr>
-            <td class="col-need">SQL proficiency &amp; Snowflake</td>
-            <td class="col-check">&check;</td>
-            <td class="col-have">Mined 17B+ monthly records in Snowflake using SQL. Consolidated 5+ data sources into Snowflake at Capgemini, eliminating a 3-hour manual step.</td>
-          </tr>
-          <tr>
             <td class="col-need">Cohort analysis, retention/churn, LTV, lifecycle performance</td>
             <td class="col-check">&check;</td>
-            <td class="col-have">Built Looker dashboards surfacing cohort, retention, and LTV metrics across user segments. Conducted cohort analysis on enrollment data surfacing engagement patterns across 3+ segments.</td>
+            <td class="col-have">Built Looker dashboards surfacing cohort, retention, and LTV metrics at S2N Health. Cohort analysis on member enrollment data across 3+ segments.</td>
           </tr>
           <tr>
             <td class="col-need">A/B testing - design, measurement, multivariate analysis</td>
             <td class="col-check">&check;</td>
-            <td class="col-have">Analyzed 15+ A/B tests at Capgemini using SQL and Python, quantifying lift across user segments and informing go/no-go decisions that shipped 5+ product updates.</td>
+            <td class="col-have">Analyzed 15+ A/B tests at Capgemini, quantifying lift across user segments and informing go/no-go decisions that shipped 5+ product updates.</td>
+          </tr>
+          <tr>
+            <td class="col-need">SQL &amp; Snowflake</td>
+            <td class="col-check">&check;</td>
+            <td class="col-have">Mined 17B+ monthly records in Snowflake via SQL. Consolidated 5+ source datasets into Snowflake, eliminating a 3-hour manual step.</td>
           </tr>
           <tr>
             <td class="col-need">Looker (and similar BI platforms)</td>
             <td class="col-check">&check;</td>
-            <td class="col-have">Built Looker dashboards at S2N Health cutting ad-hoc requests by 50%. Looker on Snowflake-backed data enabling sub-second queries across 8+ reports.</td>
+            <td class="col-have">Looker dashboards at S2N Health cutting ad-hoc requests by 50%. Looker on Snowflake-backed data enabling sub-second queries across 8+ reports.</td>
           </tr>
           <tr>
             <td class="col-need">Segment, Mixpanel, analytics &amp; event platforms</td>
             <td class="col-check">&check;</td>
-            <td class="col-have">Segment and Mixpanel in analytics toolkit. Experienced sourcing event data from NoSQL sources, analytics platforms, and production databases for behavioral analysis.</td>
+            <td class="col-have">Segment and Mixpanel in toolkit. Experienced sourcing event data from NoSQL sources and analytics platforms for behavioral analysis.</td>
           </tr>
           <tr>
             <td class="col-need">Python for statistical analysis</td>
             <td class="col-check">&check;</td>
-            <td class="col-have">Python (Pandas) across every role - A/B test analysis, cohort analysis, Prophet forecasting models, and automated data monitoring that reclaimed 8+ analyst hours/week.</td>
+            <td class="col-have">Python (Pandas) across every role - A/B tests, cohort analysis, Prophet forecasting models (12% to 9% MAPE), automated monitoring.</td>
           </tr>
           <tr>
-            <td class="col-need">Comfortable with imperfect, ambiguous business questions</td>
+            <td class="col-need">Ambiguous business questions &amp; cross-functional partnership</td>
             <td class="col-check">&check;</td>
-            <td class="col-have">Partnered with product, engineering, and marketing at Capgemini to turn ambiguous questions into measurable analyses - shipping 10+ cross-functional deliverables from fuzzy starting points.</td>
-          </tr>
-          <tr>
-            <td class="col-need">Translate technical analysis into clear, actionable insights</td>
-            <td class="col-check">&check;</td>
-            <td class="col-have">Prepared EDA reports surfacing $150K+ in revenue opportunities for senior stakeholders. Delivered Tableau dashboards with yearly-to-daily drill-down for non-technical audiences.</td>
-          </tr>
-          <tr>
-            <td class="col-need">Exploratory analysis &amp; high-value hypothesis generation</td>
-            <td class="col-check">&check;</td>
-            <td class="col-have">Identified 12+ critical data quality issues before production impact. Built Prophet forecasting models reducing forecast error from 12% MAPE to 9% through iterative hypothesis work.</td>
+            <td class="col-have">Shipped 10+ cross-functional analytical deliverables at Capgemini by translating fuzzy asks from product, marketing, and engineering into measurable analyses.</td>
           </tr>
         </tbody>
       </table>
@@ -452,231 +324,28 @@
     <!-- Three Reasons -->
     <section id="reasons">
       <p class="section-label">Why Me</p>
+
       <article class="reason-card">
         <span class="reason-number" aria-hidden="true">1</span>
-        <h2>I think in subscription lifetime value - not just monthly retention rates</h2>
-        <p>Retention rate is a lagging indicator. The real question is: which members have high LTV potential, which are signaling early churn risk, and what does the lifecycle look like between acquisition and win-back? I've built analytics that answer all three.</p>
-        <p>At <strong>S2N Health</strong>, I built Looker dashboards surfacing cohort and retention metrics across user segments, cutting recurring ad-hoc requests by <strong>50%</strong>. I conducted cohort analysis on member enrollment data using SQL and Python, surfacing retention and engagement patterns across 3+ segments - identifying which cohorts were trending toward churn weeks before it happened, giving the product team time to intervene.</p>
-        <p>At <strong>Capgemini</strong>, I spearheaded quantitative analysis identifying trends that drove $150K+ in revenue opportunities - specifically by separating high-LTV segments from at-risk ones and building the reporting layer that made that distinction visible to leadership. I also consolidated transactional datasets from 5+ sources into Snowflake, eliminating the 3-hour manual consolidation step that was blocking lifecycle analysis from happening in the first place.</p>
+        <h2>I think in subscription lifetime value, not just monthly rates</h2>
+        <p>At <strong>S2N Health</strong>, I built Looker dashboards surfacing cohort, retention, and LTV metrics across user segments - cutting recurring ad-hoc requests by <strong>50%</strong>. I ran cohort analyses on member enrollment data surfacing engagement patterns across 3+ segments, identifying which cohorts were trending toward churn weeks before it happened.</p>
+        <p>At <strong>Capgemini</strong>, I identified high-LTV vs. at-risk segments to surface <strong>$150K+ in revenue opportunities</strong> - and built the reporting layer that made that distinction visible and actionable for leadership.</p>
         <p class="result">Cohort LTV curves, early churn signals, reactivation windows - I build the full subscription analytics picture.</p>
       </article>
 
       <article class="reason-card">
         <span class="reason-number" aria-hidden="true">2</span>
-        <h2>I run A/B tests end-to-end - and I know when the results are lying</h2>
-        <p>Thoughtful test design for lifecycle comms and new member experiences isn't just about calculating a p-value. It's about knowing when the test was underpowered, when the cohort has a selection problem, and when "statistically significant" still doesn't mean you should ship it.</p>
-        <p>At <strong>Capgemini</strong>, I analyzed <strong>15+ A/B tests</strong> across product features using SQL and Python, quantifying lift across user segments and informing go/no-go decisions that shipped <strong>5+ product updates</strong>. I owned the full experimental workflow - from hypothesis framing and sample size calculation, through measurement, to the final recommendation. I flagged when results were misleading and helped teams avoid making product decisions on noise.</p>
-        <p>I also built Prophet forecasting models on historical data in Python, reducing forecast error from 12% MAPE to 9% - the kind of iterative, hypothesis-driven quantitative work that makes the entire experimentation program sharper over time.</p>
-        <p class="result">From test design to the go/no-go decision - I own the whole experimental loop, including knowing when to pump the brakes.</p>
+        <h2>I run A/B tests end-to-end - and know when results are misleading</h2>
+        <p>At <strong>Capgemini</strong>, I analyzed <strong>15+ A/B tests</strong> across product features using SQL and Python - owning the full workflow from hypothesis framing and power analysis through measurement and the final go/no-go recommendation. I flagged when results were misleading and helped teams avoid shipping on noise.</p>
+        <p class="result">From test design to the decision that follows - I own the whole experimental loop.</p>
       </article>
 
       <article class="reason-card">
         <span class="reason-number" aria-hidden="true">3</span>
         <h2>I thrive on imperfect questions - the fuzzier the ask, the better</h2>
-        <p>The most valuable retention insights don't come from a clean, well-scoped analysis request. They come from someone sitting in a cross-functional meeting, listening to a half-formed product question, and knowing how to break it down into something answerable. That's my favorite part of the job.</p>
-        <p>At Capgemini, I partnered with product, engineering, and marketing teams to turn ambiguous business questions into measurable analyses, shipping <strong>10+ cross-functional deliverables</strong> - each starting from a fuzzy "why are users doing X?" and ending with a clear recommendation. I spearheaded quantitative analysis across 10+ business units, surfacing <strong>$150K+ in revenue opportunities</strong> by asking the question behind the question.</p>
-        <p>At S2N Health, I partnered with engineering on reporting specs across NoSQL and relational sources - aligning 8+ report specifications across 3 data sources. I also automated daily production data monitoring using Python, reclaiming <strong>8+ analyst hours per week</strong> previously lost to manual checks - freeing that time for the exploratory work that actually creates new hypotheses.</p>
-        <p class="result">I don't wait for a clean question. I help the team figure out what question is actually worth answering.</p>
+        <p>At Capgemini, I partnered with product, engineering, and marketing to turn ambiguous questions into measurable analyses, shipping <strong>10+ cross-functional deliverables</strong>. At S2N Health, I automated daily production monitoring reclaiming <strong>8+ analyst hours per week</strong> - freeing that time for the exploratory work that actually creates new hypotheses.</p>
+        <p class="result">I don't wait for a clean question. I help the team figure out what's actually worth answering.</p>
       </article>
-    </section>
-
-    <!-- Dashboard Samples -->
-    <section id="dashboards">
-      <p class="section-label">Dashboard Samples</p>
-      <p class="dash-intro">Representative examples of the retention analytics outputs I build - cohort heatmaps, LTV curves, and A/B test summaries. The format and tooling translate directly to Looker on Snowflake.</p>
-      <div class="dash-grid">
-
-        <!-- Cohort Retention Heatmap -->
-        <div class="dash-card">
-          <div class="dash-card-header">
-            <span class="dash-card-title">&#128202; Member Cohort Retention Heatmap</span>
-            <span class="dash-card-badge">Looker &middot; Snowflake</span>
-          </div>
-          <div class="dash-card-body">
-            <table class="heatmap">
-              <thead>
-                <tr>
-                  <th>Cohort</th>
-                  <th>Wk 0</th>
-                  <th>Wk 1</th>
-                  <th>Wk 2</th>
-                  <th>Wk 4</th>
-                  <th>Wk 8</th>
-                  <th>Wk 12</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Jan '25</td>
-                  <td class="h5">100%</td>
-                  <td class="h5">82%</td>
-                  <td class="h4">71%</td>
-                  <td class="h3">58%</td>
-                  <td class="h2">44%</td>
-                  <td class="h2">38%</td>
-                </tr>
-                <tr>
-                  <td>Feb '25</td>
-                  <td class="h5">100%</td>
-                  <td class="h4">79%</td>
-                  <td class="h4">68%</td>
-                  <td class="h3">54%</td>
-                  <td class="h2">41%</td>
-                  <td class="h1">35%</td>
-                </tr>
-                <tr>
-                  <td>Mar '25</td>
-                  <td class="h5">100%</td>
-                  <td class="h5">85%</td>
-                  <td class="h4">74%</td>
-                  <td class="h4">63%</td>
-                  <td class="h3">52%</td>
-                  <td class="h2">46%</td>
-                </tr>
-                <tr>
-                  <td>Apr '25</td>
-                  <td class="h5">100%</td>
-                  <td class="h4">81%</td>
-                  <td class="h4">70%</td>
-                  <td class="h3">57%</td>
-                  <td class="h2">43%</td>
-                  <td class="hna">-</td>
-                </tr>
-                <tr>
-                  <td>May '25</td>
-                  <td class="h5">100%</td>
-                  <td class="h5">88%</td>
-                  <td class="h4">78%</td>
-                  <td class="h4">67%</td>
-                  <td class="hna">-</td>
-                  <td class="hna">-</td>
-                </tr>
-                <tr>
-                  <td>Jun '25</td>
-                  <td class="h5">100%</td>
-                  <td class="h5">84%</td>
-                  <td class="h4">73%</td>
-                  <td class="hna">-</td>
-                  <td class="hna">-</td>
-                  <td class="hna">-</td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="heatmap-legend">
-              <span>Low</span>
-              <span style="background:var(--heat-1)"></span>
-              <span style="background:var(--heat-2)"></span>
-              <span style="background:var(--heat-3)"></span>
-              <span style="background:var(--heat-4)"></span>
-              <span style="background:var(--heat-5)"></span>
-              <span>High retention</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- LTV Curve -->
-        <div class="dash-card">
-          <div class="dash-card-header">
-            <span class="dash-card-title">&#128200; Cumulative Member LTV by Segment</span>
-            <span class="dash-card-badge">SQL &middot; Python</span>
-          </div>
-          <div class="dash-card-body">
-            <div class="ltv-chart-wrap">
-              <svg viewBox="0 0 600 230" xmlns="http://www.w3.org/2000/svg" aria-label="LTV curve chart">
-                <!-- Grid lines -->
-                <line x1="50" y1="20" x2="50" y2="200" stroke="currentColor" stroke-opacity="0.1" stroke-width="1"/>
-                <line x1="50" y1="200" x2="585" y2="200" stroke="currentColor" stroke-opacity="0.1" stroke-width="1"/>
-                <line x1="50" y1="155" x2="585" y2="155" stroke="currentColor" stroke-opacity="0.06" stroke-width="1" stroke-dasharray="4,4"/>
-                <line x1="50" y1="110" x2="585" y2="110" stroke="currentColor" stroke-opacity="0.06" stroke-width="1" stroke-dasharray="4,4"/>
-                <line x1="50" y1="65" x2="585" y2="65" stroke="currentColor" stroke-opacity="0.06" stroke-width="1" stroke-dasharray="4,4"/>
-                <line x1="50" y1="20" x2="585" y2="20" stroke="currentColor" stroke-opacity="0.06" stroke-width="1" stroke-dasharray="4,4"/>
-                <!-- Y axis labels -->
-                <text x="42" y="204" text-anchor="end" font-size="10" fill="currentColor" opacity="0.4">$0</text>
-                <text x="42" y="159" text-anchor="end" font-size="10" fill="currentColor" opacity="0.4">$100</text>
-                <text x="42" y="114" text-anchor="end" font-size="10" fill="currentColor" opacity="0.4">$200</text>
-                <text x="42" y="69" text-anchor="end" font-size="10" fill="currentColor" opacity="0.4">$300</text>
-                <text x="42" y="24" text-anchor="end" font-size="10" fill="currentColor" opacity="0.4">$400</text>
-                <!-- X axis labels -->
-                <text x="50" y="215" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.4">M1</text>
-                <text x="149" y="215" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.4">M3</text>
-                <text x="248" y="215" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.4">M5</text>
-                <text x="347" y="215" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.4">M7</text>
-                <text x="446" y="215" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.4">M9</text>
-                <text x="545" y="215" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.4">M11</text>
-                <!-- High engagement line (top) -->
-                <polyline points="50,200 99,171 148,143 197,118 246,98 295,80 344,65 393,53 442,43 491,35 540,29 585,24" fill="none" stroke="#4A6741" stroke-width="2.5" stroke-linejoin="round"/>
-                <!-- All members line (middle) -->
-                <polyline points="50,200 99,179 148,161 197,145 246,132 295,120 344,110 393,103 442,97 491,91 540,87 585,84" fill="none" stroke="#8DBF84" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="6,3"/>
-                <!-- At-risk line (bottom) -->
-                <polyline points="50,200 99,186 148,175 197,168 246,163 295,159 344,158 393,157 442,157 491,157 540,157 585,157" fill="none" stroke="#C8C8C2" stroke-width="2" stroke-linejoin="round" stroke-dasharray="3,3"/>
-                <!-- End value labels -->
-                <text x="589" y="27" font-size="11" font-weight="700" fill="#4A6741">$395</text>
-                <text x="589" y="87" font-size="11" font-weight="700" fill="#8DBF84">$260</text>
-                <text x="589" y="160" font-size="11" fill="currentColor" opacity="0.5">$96</text>
-              </svg>
-            </div>
-            <div class="ltv-legend">
-              <div class="ltv-legend-item">
-                <div class="ltv-legend-line" style="background:#4A6741"></div>
-                <span>High engagement</span>
-              </div>
-              <div class="ltv-legend-item">
-                <div class="ltv-legend-line" style="background:#8DBF84; background: repeating-linear-gradient(90deg,#8DBF84 0,#8DBF84 6px,transparent 6px,transparent 9px)"></div>
-                <span>All members</span>
-              </div>
-              <div class="ltv-legend-item">
-                <div class="ltv-legend-line" style="background: repeating-linear-gradient(90deg,#9B9B9B 0,#9B9B9B 3px,transparent 3px,transparent 6px)"></div>
-                <span>At-risk segment</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- A/B Test Result -->
-        <div class="dash-card">
-          <div class="dash-card-header">
-            <span class="dash-card-title">&#9881; A/B Test - Lifecycle Comms Variant</span>
-            <span class="dash-card-badge">Python &middot; SQL</span>
-          </div>
-          <div class="dash-card-body">
-            <div class="ab-wrap">
-              <div class="ab-variant">
-                <div class="ab-label">Control</div>
-                <div class="ab-value">18.2%</div>
-                <div class="ab-sub">30-day retention rate</div>
-                <div class="ab-bar-wrap"><div class="ab-bar" style="width:46%"></div></div>
-                <div class="ab-sub">n = 2,100 members</div>
-              </div>
-              <div class="ab-variant winner">
-                <div class="ab-label">&#9650; Variant (Winner)</div>
-                <div class="ab-value">22.7%</div>
-                <div class="ab-sub">30-day retention rate</div>
-                <div class="ab-bar-wrap"><div class="ab-bar" style="width:57%"></div></div>
-                <div class="ab-sub">n = 2,100 members</div>
-              </div>
-            </div>
-            <div class="ab-stats">
-              <div class="ab-stat">
-                <span class="ab-stat-label">Lift</span>
-                <span class="ab-stat-val positive">+4.5pp &nbsp;(+24.7%)</span>
-              </div>
-              <div class="ab-stat">
-                <span class="ab-stat-label">p-value</span>
-                <span class="ab-stat-val">0.023</span>
-              </div>
-              <div class="ab-stat">
-                <span class="ab-stat-label">Confidence</span>
-                <span class="ab-stat-val positive">97.7%</span>
-              </div>
-              <div class="ab-stat">
-                <span class="ab-stat-label">Decision</span>
-                <span class="ab-stat-val positive">Ship variant</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
     </section>
 
     <!-- Value -->
@@ -686,22 +355,22 @@
         <div class="value-card">
           <div class="value-card-header">
             <span class="value-card-icon">&#128140;</span>
-            <h3>Lifecycle Comms Analytics</h3>
+            <h3>Lifecycle Comms</h3>
           </div>
           <ul class="value-list">
-            <li>Cohort LTV curves and retention analysis that surface early churn signals</li>
+            <li>Retention curves and LTV analysis surfacing early churn signals</li>
             <li>Measurement frameworks for lifecycle email, push, and in-app campaigns</li>
-            <li>Win-back and reactivation analysis identifying the right intervention window</li>
+            <li>Win-back analysis identifying the right reactivation window</li>
           </ul>
         </div>
         <div class="value-card">
           <div class="value-card-header">
             <span class="value-card-icon">&#128241;</span>
-            <h3>Mobile &amp; App Behavior</h3>
+            <h3>Mobile &amp; App Analytics</h3>
           </div>
           <ul class="value-list">
-            <li>Segment and Mixpanel event analysis surfacing engagement drop-off points</li>
-            <li>Feature-level A/B tests with proper power analysis and significance testing</li>
+            <li>Segment and Mixpanel event analysis surfacing engagement drop-off</li>
+            <li>Feature A/B tests with proper power analysis and significance testing</li>
             <li>Behavioral segmentation separating power users from at-risk members</li>
           </ul>
         </div>
@@ -711,9 +380,9 @@
             <h3>New Member Services</h3>
           </div>
           <ul class="value-list">
-            <li>Onboarding funnel analysis identifying where new members disengage</li>
-            <li>Hypothesis valuation to prioritize which new services move retention metrics</li>
-            <li>Self-serve Looker dashboards so every team stays aligned on member health</li>
+            <li>Onboarding funnel analysis finding where new members disengage</li>
+            <li>Hypothesis valuation to prioritize what moves retention metrics</li>
+            <li>Self-serve Looker dashboards keeping every team aligned on member health</li>
           </ul>
         </div>
       </div>
@@ -729,10 +398,10 @@
         </div>
         <div class="exp-role">Data Analyst Co-op</div>
         <ul class="exp-bullets">
-          <li>Mined <span class="highlight">17B+ monthly records in Snowflake</span> via SQL, identifying 12+ critical data quality issues before production impact</li>
-          <li>Built <span class="highlight">Looker dashboards surfacing cohort, retention, and LTV metrics</span>, cutting recurring ad-hoc requests by 50%</li>
-          <li>Conducted cohort analysis on member enrollment data, surfacing <span class="highlight">retention and engagement patterns across 3+ segments</span></li>
-          <li>Partnered with engineering on reporting specs across NoSQL and relational sources, aligning 8+ specs across 3 data sources</li>
+          <li>Mined <span class="highlight">17B+ monthly records in Snowflake</span>, identifying 12+ critical data quality issues before production impact</li>
+          <li>Built <span class="highlight">Looker dashboards surfacing cohort, retention &amp; LTV metrics</span> - cutting ad-hoc requests by 50%</li>
+          <li>Conducted cohort analysis on member enrollment data, surfacing <span class="highlight">retention patterns across 3+ segments</span></li>
+          <li>Partnered with engineering aligning 8+ report specs across 3 data sources</li>
         </ul>
       </div>
       <div class="exp-card">
@@ -742,11 +411,10 @@
         </div>
         <div class="exp-role">Senior Data Analyst</div>
         <ul class="exp-bullets">
-          <li>Analyzed <span class="highlight">15+ A/B tests</span> across product features, informing go/no-go decisions that shipped <span class="highlight">5+ product updates</span></li>
-          <li>Surfaced <span class="highlight">$150K+ in revenue opportunities</span> by segmenting high-LTV users from at-risk cohorts for senior stakeholders</li>
-          <li>Consolidated transactional datasets from 5+ sources into Snowflake, <span class="highlight">eliminating a 3-hour manual consolidation step</span></li>
-          <li>Automated daily production monitoring, <span class="highlight">reclaiming 8+ analyst hours per week</span> for exploratory work</li>
-          <li>Partnered cross-functionally to ship <span class="highlight">10+ analytical deliverables</span> from ambiguous, imperfect business questions</li>
+          <li>Analyzed <span class="highlight">15+ A/B tests</span>, informing go/no-go decisions that shipped <span class="highlight">5+ product updates</span></li>
+          <li>Segmented high-LTV vs. at-risk users, surfacing <span class="highlight">$150K+ in revenue opportunities</span></li>
+          <li>Automated daily production monitoring, <span class="highlight">reclaiming 8+ analyst hours per week</span></li>
+          <li>Shipped <span class="highlight">10+ cross-functional deliverables</span> from ambiguous business questions</li>
         </ul>
       </div>
     </section>
@@ -755,19 +423,18 @@
     <section id="stack">
       <p class="section-label">Tech Stack</p>
       <div class="pill-section">
-        <div class="pill-section-label">Retention &amp; Subscription Analytics</div>
+        <div class="pill-section-label">Retention &amp; Analytics</div>
         <div class="pill-container">
           <span class="pill">Cohort Analysis</span>
           <span class="pill">LTV Modeling</span>
           <span class="pill">Churn / Reactivation</span>
           <span class="pill">A/B Testing</span>
           <span class="pill">Lifecycle Analytics</span>
-          <span class="pill">Retention Curves</span>
           <span class="pill">Statistical Analysis</span>
         </div>
       </div>
       <div class="pill-section">
-        <div class="pill-section-label">Platforms &amp; Event Analytics</div>
+        <div class="pill-section-label">Platforms</div>
         <div class="pill-container">
           <span class="pill">Looker</span>
           <span class="pill">Snowflake</span>
@@ -784,9 +451,8 @@
           <span class="pill">Python</span>
           <span class="pill">Pandas</span>
           <span class="pill">Excel</span>
-          <span class="pill">ETL/ELT</span>
-          <span class="pill">REST APIs</span>
           <span class="pill">NoSQL</span>
+          <span class="pill">ETL/ELT</span>
           <span class="pill">AWS</span>
           <span class="pill">GCP</span>
         </div>
@@ -795,7 +461,7 @@
   </main>
 
   <footer>
-    <p class="footer-tagline">Ready to help Ollie understand what keeps members loyal for life - and build the analytics to prove it.</p>
+    <p class="footer-tagline">Ready to help Ollie understand what keeps members loyal - and build the analytics to prove it.</p>
     <nav class="footer-links" aria-label="External links">
       <a href="https://github.com/Chinmay1220" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/chinmay-sawant-9b79a5192/" target="_blank">LinkedIn</a>
