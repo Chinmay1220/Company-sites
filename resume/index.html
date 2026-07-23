@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinmay Sawant &ndash; Data Associate</title>
+  <meta name="description" content="Chinmay Sawant &mdash; Data Associate with 3+ years of experience and a Master's in Information Systems. SQL, Python, Snowflake, and Tableau across 17B+ monthly records.">
+  <meta property="og:title" content="Chinmay Sawant &ndash; Data Associate">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-display: 'DM Serif Display', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+      --color-bg: #FAFAF8;
+      --color-surface: #FFFFFF;
+      --color-border: #E6E4DE;
+      --color-text-primary: #15131F;
+      --color-text-secondary: #5F5C6B;
+      --color-text-muted: #92909B;
+      --color-number: #E8EFFF;
+      --color-pill-bg: #E8EFFF;
+      --color-pill-text: #1B3A6B;
+      --color-pill-border: #CFDFFB;
+      --color-header-bg: rgba(250, 250, 248, 0.85);
+      --color-result: #2F6BFF;
+      --color-match-bg: #E8EFFF;
+      --color-match-check: #2F6BFF;
+      --max-width: 900px;
+      --radius: 8px;
+    }
+    [data-theme="dark"] {
+      --color-bg: #0F0E14;
+      --color-surface: #18171F;
+      --color-border: #2A2836;
+      --color-text-primary: #ECEAF7;
+      --color-text-secondary: #A09EAF;
+      --color-text-muted: #6A687A;
+      --color-number: #131A2A;
+      --color-pill-bg: #131A2A;
+      --color-pill-text: #C3D4F5;
+      --color-pill-border: #2A3550;
+      --color-header-bg: rgba(15, 14, 20, 0.85);
+      --color-result: #7DA5FF;
+      --color-match-bg: #141B2B;
+      --color-match-check: #7DA5FF;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body { font-family: var(--font-body); font-size: 16px; line-height: 1.6; color: var(--color-text-primary); background-color: var(--color-bg); transition: background-color 0.3s ease, color 0.3s ease; }
+    a { color: var(--color-text-primary); text-decoration-color: var(--color-border); text-underline-offset: 3px; transition: text-decoration-color 0.2s ease; }
+    a:hover { text-decoration-color: var(--color-text-primary); }
+
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--color-header-bg); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border); padding: 12px 24px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .wordmark { font-family: var(--font-display); font-size: 18px; color: var(--color-text-primary); text-decoration: none; }
+    .header-links { display: flex; gap: 16px; align-items: center; }
+    .header-links a { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); text-decoration: none; }
+    .header-links a:hover { color: var(--color-text-primary); }
+    .theme-toggle { background: none; border: 1px solid var(--color-border); border-radius: 50%; width: 36px; height: 36px; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--color-text-secondary); transition: border-color 0.2s ease, color 0.2s ease; }
+    .theme-toggle:hover { border-color: var(--color-text-primary); color: var(--color-text-primary); }
+    .theme-toggle svg { width: 16px; height: 16px; }
+
+    main { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+
+    /* FIRST FRAME */
+    .first-frame { padding: 32px 0 24px; }
+    .hero-row { display: flex; align-items: center; gap: 28px; margin-bottom: 24px; }
+    .hero-avatar { width: 240px; height: 240px; border-radius: 50%; object-fit: cover; border: 3px solid var(--color-border); flex-shrink: 0; }
+    .hero-info h1 { font-family: var(--font-display); font-size: 32px; font-weight: 400; line-height: 1.2; margin-bottom: 4px; }
+    .hero-role { font-size: 16px; font-weight: 500; color: var(--color-text-secondary); margin-bottom: 6px; }
+    .hero-context { font-size: 13px; color: var(--color-text-muted); margin-bottom: 10px; }
+    .hero-tagline { font-size: 15px; line-height: 1.5; color: var(--color-text-secondary); }
+
+    .stats-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; border: 1px solid var(--color-border); border-radius: var(--radius); padding: 16px; margin-bottom: 20px; text-align: center; }
+    .stats-strip .s-num { display: block; font-family: var(--font-display); font-size: 28px; line-height: 1.2; color: var(--color-text-primary); }
+    .stats-strip .s-lbl { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; color: var(--color-text-muted); }
+
+    .skills-check { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 24px; margin-bottom: 20px; }
+    .skill-item { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--color-text-secondary); padding: 6px 0; }
+    .skill-item .check { color: var(--color-match-check); font-weight: 700; font-size: 16px; flex-shrink: 0; }
+
+    .nav-row { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; padding-top: 16px; border-top: 1px solid var(--color-border); }
+    .nav-pill { font-size: 12px; font-weight: 500; text-decoration: none; letter-spacing: 0.5px; color: var(--color-text-muted); border: 1px solid var(--color-border); padding: 6px 14px; border-radius: 100px; transition: all 0.2s ease; }
+    .nav-pill:hover { color: var(--color-text-primary); border-color: var(--color-text-secondary); }
+
+    section { padding: 48px 0; }
+    .section-label { font-family: var(--font-body); font-size: 15px; font-weight: 500; text-transform: uppercase; letter-spacing: 3px; color: var(--color-text-muted); margin-bottom: 20px; }
+
+    /* SUMMARY */
+    #summary { padding-top: 40px; }
+    .why-text { font-size: 15px; line-height: 1.7; color: var(--color-text-secondary); }
+
+    /* REASONS / HIGHLIGHTS */
+    .reason-card { padding: 32px 0; border-top: 1px solid var(--color-border); }
+    .reason-number { display: block; font-family: var(--font-display); font-size: 72px; line-height: 1; color: var(--color-number); margin-bottom: 10px; }
+    .reason-card h2 { font-family: var(--font-display); font-size: 22px; font-weight: 400; line-height: 1.3; margin-bottom: 12px; }
+    .reason-card p { color: var(--color-text-secondary); margin-bottom: 12px; font-size: 14px; line-height: 1.65; }
+    .reason-card p:last-child { margin-bottom: 0; }
+    .result { font-weight: 500; color: var(--color-result) !important; }
+
+    /* VALUE / PROJECTS */
+    .value-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    .value-card { border: 1px solid var(--color-border); border-radius: var(--radius); padding: 20px; transition: border-color 0.3s ease; }
+    .value-card:hover { border-color: var(--color-text-muted); }
+    .value-card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+    .value-card-icon { width: 32px; height: 32px; border-radius: 7px; background: var(--color-match-bg); display: flex; align-items: center; justify-content: center; font-size: 15px; flex-shrink: 0; }
+    .value-card h3 { font-family: var(--font-display); font-size: 17px; font-weight: 400; }
+    .value-card .value-sub { font-size: 12px; color: var(--color-text-muted); margin-bottom: 10px; }
+    .value-list { list-style: none; padding: 0; margin: 0; }
+    .value-list li { font-size: 13px; color: var(--color-text-secondary); padding: 5px 0; border-bottom: 1px solid var(--color-border); }
+    .value-list li:last-child { border-bottom: none; }
+    .value-list li a { color: var(--color-result); font-weight: 500; text-decoration: none; }
+    .value-list li a:hover { text-decoration: underline; }
+
+    /* EXPERIENCE / EDUCATION */
+    .exp-card { border: 1px solid var(--color-border); border-radius: var(--radius); padding: 18px; margin-bottom: 12px; }
+    .exp-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; flex-wrap: wrap; gap: 4px; }
+    .exp-company { font-weight: 700; font-size: 15px; }
+    .exp-date { font-size: 13px; color: var(--color-text-muted); }
+    .exp-role { font-size: 13px; color: var(--color-text-secondary); margin-bottom: 10px; }
+    .exp-bullets { list-style: none; padding: 0; }
+    .exp-bullets li { position: relative; padding-left: 16px; font-size: 13px; color: var(--color-text-secondary); margin-bottom: 5px; }
+    .exp-bullets li::before { content: ''; position: absolute; left: 0; top: 8px; width: 5px; height: 5px; border-radius: 50%; background: var(--color-border); }
+    .exp-bullets .highlight { color: var(--color-text-primary); font-weight: 500; }
+
+    /* STACK */
+    #skills { text-align: center; }
+    .pill-container { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+    .pill { display: inline-flex; padding: 5px 13px; font-size: 12px; font-weight: 500; border-radius: 100px; background: var(--color-pill-bg); color: var(--color-pill-text); border: 1px solid var(--color-pill-border); }
+    .pill-section { margin-bottom: 12px; }
+    .pill-section-label { font-size: 10px; font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-text-muted); margin-bottom: 8px; }
+
+    footer { text-align: center; padding: 40px 24px; border-top: 1px solid var(--color-border); max-width: var(--max-width); margin: 0 auto; }
+    .footer-tagline { font-family: var(--font-display); font-size: 19px; margin-bottom: 18px; }
+    .footer-links { display: flex; gap: 24px; justify-content: center; margin-bottom: 20px; flex-wrap: wrap; }
+    .footer-links a { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); text-decoration: none; }
+    .footer-links a:hover { color: var(--color-text-primary); }
+    .footer-copy { font-size: 12px; color: var(--color-text-muted); }
+
+    @media (max-width: 600px) {
+      .hero-row { flex-direction: column; text-align: center; gap: 16px; }
+      .hero-avatar { width: 140px; height: 140px; }
+      .hero-info h1 { font-size: 26px; }
+      .stats-strip { grid-template-columns: repeat(2, 1fr); }
+      .stats-strip .s-num { font-size: 24px; }
+      .skills-check { grid-template-columns: 1fr; }
+    }
+    @media (min-width: 600px) {
+      .reason-number { font-size: 90px; }
+      .value-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (min-width: 960px) {
+      .hero-info h1 { font-size: 36px; }
+      .stats-strip .s-num { font-size: 32px; }
+    }
+    a:focus-visible, button:focus-visible { outline: 2px solid var(--color-text-primary); outline-offset: 2px; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="wordmark">Chinmay Sawant</a>
+    <div class="header-links">
+      <a href="mailto:csawant1200@gmail.com">Email</a>
+      <a href="https://github.com/Chinmay1220" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/chinmay-sawant-9b79a5192/" target="_blank">LinkedIn</a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="display:none">
+          <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+        <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="first-frame">
+      <div class="hero-row">
+        <img class="hero-avatar" src="photo.png" alt="Chinmay Sawant">
+        <div class="hero-info">
+          <h1>Chinmay Sawant</h1>
+          <p class="hero-role">Data Associate</p>
+          <p class="hero-context">United States &middot; MS Information Systems, Northeastern &middot; 857-701-2953</p>
+          <p class="hero-tagline">Data Associate with 3+ years of experience and a Master's in Information Systems. Started in enterprise data surfacing $150K+ in revenue opportunities, and most recently worked through 17B+ monthly records at a healthcare startup. Most interested in where business context meets the data.</p>
+        </div>
+      </div>
+
+      <div class="stats-strip">
+        <div>
+          <span class="s-num">3+ yrs</span>
+          <span class="s-lbl">Data Experience</span>
+        </div>
+        <div>
+          <span class="s-num">17B+</span>
+          <span class="s-lbl">Records Analyzed</span>
+        </div>
+        <div>
+          <span class="s-num">$165K+</span>
+          <span class="s-lbl">Revenue Recovered</span>
+        </div>
+        <div>
+          <span class="s-num">97%</span>
+          <span class="s-lbl">Compliance Coverage</span>
+        </div>
+      </div>
+
+      <div class="skills-check">
+        <div class="skill-item"><span class="check">&check;</span> SQL &amp; Python Analytics</div>
+        <div class="skill-item"><span class="check">&check;</span> Snowflake Query &amp; Cost Optimization</div>
+        <div class="skill-item"><span class="check">&check;</span> Tableau &amp; Power BI Dashboards</div>
+        <div class="skill-item"><span class="check">&check;</span> Data Quality &amp; Governance Audits</div>
+        <div class="skill-item"><span class="check">&check;</span> KPI Definition &amp; Metrics Frameworks</div>
+        <div class="skill-item"><span class="check">&check;</span> Financial &amp; Revenue Analysis</div>
+        <div class="skill-item"><span class="check">&check;</span> Data Modeling</div>
+        <div class="skill-item"><span class="check">&check;</span> Forecasting Models</div>
+      </div>
+
+      <div class="nav-row">
+        <a href="#summary" class="nav-pill">Summary</a>
+        <a href="#experience" class="nav-pill">Experience</a>
+        <a href="#projects" class="nav-pill">Projects &amp; Open Source</a>
+        <a href="#leadership" class="nav-pill">Leadership</a>
+        <a href="#skills" class="nav-pill">Skills</a>
+        <a href="#education" class="nav-pill">Education</a>
+      </div>
+    </section>
+
+    <section id="summary">
+      <p class="section-label">Professional Summary</p>
+      <p class="why-text">Data Associate with 3+ years of experience and a Master's in Information Systems. I started out in enterprise data, surfacing $150K+ in revenue opportunities by uncovering missed insights. Recently at a healthcare startup, I've been working through 17B+ monthly records and the data quality challenges that come at that scale &mdash; optimizing Snowflake pipelines, flagging financial anomalies, and translating ambiguous business needs into clear KPIs. Most interested in where business context meets the data.</p>
+    </section>
+
+    <section id="experience">
+      <p class="section-label">Professional Experience</p>
+      <div class="exp-card">
+        <div class="exp-header">
+          <span class="exp-company">S2N Health <span style="font-weight:400;color:var(--color-text-muted);">&middot; SaaS B2B Startup</span></span>
+          <span class="exp-date">Jan 2025 &ndash; Present &middot; Boston, MA</span>
+        </div>
+        <div class="exp-role">Data Associate</div>
+        <ul class="exp-bullets">
+          <li>Optimized <span class="highlight">Snowflake queries and warehouse sizing</span> for large-scale financial and transactional data pipelines using clustering keys, cutting monthly compute cost <span class="highlight">$2.7K+</span> and daily runtime by <span class="highlight">2+ hours</span>.</li>
+          <li>Analyzed <span class="highlight">17B+ records across 8 source systems</span> using SQL and Python, flagging financial anomalies and inconsistencies to improve data accuracy, saving <span class="highlight">~20 hours/week</span> in reconciliation.</li>
+          <li>Partnered with business and finance teams to translate ambiguous requirements into clear <span class="highlight">KPI definitions and performance measurement frameworks</span>.</li>
+          <li>Built executive dashboards in <span class="highlight">Tableau</span> combining CRM and revenue data, cutting report preparation time <span class="highlight">80% (4 hours to under 45 minutes)</span> and accelerating decisions on portfolio and financial performance.</li>
+          <li>Identified <span class="highlight">14 data governance gaps</span> through automated dataset audits, increasing policy and compliance coverage from <span class="highlight">82% to 97%</span>.</li>
+        </ul>
+      </div>
+      <div class="exp-card">
+        <div class="exp-header">
+          <span class="exp-company">Capgemini</span>
+          <span class="exp-date">Oct 2020 &ndash; Jul 2023 &middot; Mumbai, India</span>
+        </div>
+        <div class="exp-role">Senior Data Analyst</div>
+        <ul class="exp-bullets">
+          <li>Achieved a <span class="highlight">2x speedup</span> in analytical query performance across 10+ business units by refactoring legacy SQL transformations and implementing strategic data partitioning in Snowflake.</li>
+          <li>Eliminated <span class="highlight">13 hours/week</span> of manual effort by applying SQL and Python across 8+ business units, uncovering spend and revenue trends and process inefficiencies.</li>
+          <li>Developed analytics datasets with go-to-market teams, using Tableau to identify billing leakage and churn patterns, resulting in <span class="highlight">$165K+ recovered revenue</span>.</li>
+          <li>Consolidated <span class="highlight">12+ ad hoc reports into 3 executive dashboards</span>, partnering with finance and operations teams to standardize reporting requirements and business metrics.</li>
+          <li>Cut analyst onboarding time <span class="highlight">3x (3 weeks to 10 days)</span> by documenting reporting logic, data sources, and business definitions.</li>
+          <li>Improved sales forecast accuracy <span class="highlight">15%</span> by developing analytical models that informed pricing and profitability decisions across 3 business lines.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="section-label">Open Source Contributions &amp; Projects</p>
+      <div class="value-grid">
+        <div class="value-card">
+          <div class="value-card-header">
+            <span class="value-card-icon">&#128202;</span>
+            <h3>Financial Forecasting</h3>
+          </div>
+          <p class="value-sub">Python &middot; SQL &middot; Excel &middot; Tableau</p>
+          <ul class="value-list">
+            <li>Built forecasting models on historical financial data, improving accuracy from 12% MAPE to 9%.</li>
+            <li>Delivered interactive Power BI dashboards to track KPIs and trends across business lines.</li>
+          </ul>
+        </div>
+        <div class="value-card">
+          <div class="value-card-header">
+            <span class="value-card-icon">&#129303;</span>
+            <h3>Hugging Face</h3>
+          </div>
+          <p class="value-sub">Hub cache validation</p>
+          <ul class="value-list">
+            <li>Contributed Windows cache scan handling to ignore OS metadata files and prevent corruption warnings during Hub cache validation. <strong>PR #4357</strong></li>
+          </ul>
+        </div>
+        <div class="value-card">
+          <div class="value-card-header">
+            <span class="value-card-icon">&#128295;</span>
+            <h3>Hugging Face</h3>
+          </div>
+          <p class="value-sub">Chat CLI fix</p>
+          <ul class="value-list">
+            <li>Opened PR fixing chat CLI save-filename handling with regression tests and passing CI / security checks. <strong>PR #46567</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="leadership">
+      <p class="section-label">Leadership &amp; Impact</p>
+      <div class="value-grid">
+        <div class="value-card">
+          <div class="value-card-header">
+            <span class="value-card-icon">&#127979;</span>
+            <h3>Teaching Assistant</h3>
+          </div>
+          <ul class="value-list">
+            <li>Personalized AI for Learning &mdash; assisted 250+ students with AI projects and assignments.</li>
+          </ul>
+        </div>
+        <div class="value-card">
+          <div class="value-card-header">
+            <span class="value-card-icon">&#129309;</span>
+            <h3>Team Lead (Volunteer)</h3>
+          </div>
+          <ul class="value-list">
+            <li>Volunteered as a team lead at a Boston startup.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <p class="section-label">Skills &amp; Certifications</p>
+      <div class="pill-section">
+        <div class="pill-section-label">Analytics &amp; Visualization</div>
+        <div class="pill-container">
+          <span class="pill">Microsoft Excel</span>
+          <span class="pill">Power BI</span>
+          <span class="pill">Tableau</span>
+          <span class="pill">Data Integrity</span>
+          <span class="pill">Data Audits</span>
+          <span class="pill">Data Modeling</span>
+          <span class="pill">SAS</span>
+        </div>
+      </div>
+      <div class="pill-section">
+        <div class="pill-section-label">Languages &amp; Tools</div>
+        <div class="pill-container">
+          <span class="pill">Python</span>
+          <span class="pill">SQL</span>
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">Finance Analysis</span>
+          <span class="pill">Statistical Analysis</span>
+          <span class="pill">Claude AI</span>
+        </div>
+      </div>
+      <div class="pill-section">
+        <div class="pill-section-label">Cloud &amp; Platforms</div>
+        <div class="pill-container">
+          <span class="pill">Snowflake</span>
+          <span class="pill">AWS</span>
+          <span class="pill">GitHub</span>
+          <span class="pill">AI / ML</span>
+          <span class="pill">Git</span>
+          <span class="pill">Jira</span>
+          <span class="pill">CRM</span>
+          <span class="pill">Prompt Engineering</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <p class="section-label">Education</p>
+      <div class="exp-card">
+        <div class="exp-header">
+          <span class="exp-company">Northeastern University</span>
+          <span class="exp-date">Sept 2023 &ndash; Dec 2025</span>
+        </div>
+        <div class="exp-role">M.S. Information Systems</div>
+      </div>
+      <div class="exp-card">
+        <div class="exp-header">
+          <span class="exp-company">Mumbai University</span>
+          <span class="exp-date">Aug 2016 &ndash; Oct 2020</span>
+        </div>
+        <div class="exp-role">B.E. Computer Engineering (Honors)</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-tagline">Where business context meets the data.</p>
+    <nav class="footer-links" aria-label="External links">
+      <a href="mailto:csawant1200@gmail.com">csawant1200@gmail.com</a>
+      <a href="https://github.com/Chinmay1220" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/chinmay-sawant-9b79a5192/" target="_blank">LinkedIn</a>
+    </nav>
+    <p class="footer-copy">&copy; 2026 Chinmay Sawant</p>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.getElementById('theme-toggle');
+      var sunIcon = document.getElementById('icon-sun');
+      var moonIcon = document.getElementById('icon-moon');
+      function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        sunIcon.style.display = theme === 'dark' ? 'block' : 'none';
+        moonIcon.style.display = theme === 'dark' ? 'none' : 'block';
+      }
+      applyTheme(document.documentElement.getAttribute('data-theme') || 'light');
+      toggle.addEventListener('click', function () {
+        var now = document.documentElement.getAttribute('data-theme');
+        applyTheme(now === 'dark' ? 'light' : 'dark');
+      });
+    })();
+  </script>
+</body>
+</html>
