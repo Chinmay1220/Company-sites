@@ -8,11 +8,13 @@ Targeted "Why You Should Hire Me" one-pager websites for specific company applic
 |---------|------|------|
 | [Lindy AI](https://lindy.ai) | Data Engineer | `/` (root) |
 | [Wake County HACR](https://www.wake.gov/departments-government/housing-affordability-community-revitalization) | Data Analyst | `/wake-county/` |
+| [Hugging Face](https://github.com/huggingface/huggingface_hub) | Open-source PR write-up | `/version-5/pr-story/writeup/` |
 
 ## Live Site
 
 - Lindy: `https://chinmay1220.github.io/Company-sites/`
 - Wake County: `https://chinmay1220.github.io/Company-sites/wake-county/`
+- PR write-up: `https://chinmay1220.github.io/Company-sites/version-5/pr-story/writeup/`
 
 ## Deploy to GitHub Pages
 
